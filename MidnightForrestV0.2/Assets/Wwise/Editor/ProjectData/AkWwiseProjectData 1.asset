@@ -16,13 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1941365548
-    m_lastTimePart2: -1999382322
-=======
     m_lastTimePsrt1: 941323204
     m_lastTimePart2: -1999382402
->>>>>>> HealthBar
     List:
     - Name: Piglet_Pickup
       Path: Default Work Unit\Piglet_Pickup
@@ -48,49 +43,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1941815574
-    m_lastTimePart2: -1999382322
-=======
     m_lastTimePsrt1: 941773230
     m_lastTimePart2: -1999382402
->>>>>>> HealthBar
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{276AEDB6-AD9C-4E68-B130-87D5120DA1D8}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1947385893
-    m_lastTimePart2: -1999382322
-=======
     m_lastTimePsrt1: 947393551
     m_lastTimePart2: -1999382402
->>>>>>> HealthBar
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{128DF6EF-6CC3-48E7-A1EB-906330253347}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1947385893
-    m_lastTimePart2: -1999382322
-=======
     m_lastTimePsrt1: 947403552
     m_lastTimePart2: -1999382402
->>>>>>> HealthBar
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{634FB385-0020-4521-9C31-E7BA27A19102}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1947365892
-    m_lastTimePart2: -1999382322
-=======
     m_lastTimePsrt1: 947383551
     m_lastTimePart2: -1999382402
->>>>>>> HealthBar
     List:
     - Name: Main
       Path: Default Work Unit\Main

@@ -323,7 +323,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  followPiggy: 1
+  isDead: 1
+  followPiggy: 0
+  aiRadius: 15
+  startSpeed: 5
+  slowDown: 10
+  heading: 0
+  directionChangeInterval: 1
 --- !u!114 &114000011567082088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -335,6 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bc4d9eea4bde342aeead13dbbeff96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biteRange: 2
   timeBetweenBites: 1
   biteDamage: 25
 --- !u!135 &135000011664814908
@@ -357,7 +364,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1000013740247416}
   m_Enabled: 1
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

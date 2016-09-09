@@ -28,7 +28,7 @@ public class PiggyHealth : MonoBehaviour {
 		Application.LoadLevel ("game over");
 	}
 	void OnTriggerEnter(Collider hittingCollider){
-		if (hittingCollider.name == "Prize") {
+		if (gameObject.tag == "Prize") {
 			print ("you win!!!");
 			Application.LoadLevel ("you win");
 		}

@@ -4,36 +4,115 @@ using System.Collections;
 public class TouchInput : MonoBehaviour
 {
 
-    public float raycastDistance = 4f;
-    float lockPos = 0f;
+    private float lockPos = 0f; // Variable to lock the rotation on certain axes
+    public float playerSpeed; // The speed of the player
+    public float acceleration; // The acceleration of the player
+    public float rotateRadius = 5.0f; // The variable that controls the vicinity in which the character will only rotate
+    private int touch; // A counter for amoun of touches
+    private float counter;
 
-    Ray ray;
-    RaycastHit hit;
+    Ray ray; // A ray from the camera
+    RaycastHit hit; // What did the ray hit
 
-    public Collider coll;
+    private Rigidbody rBody; // A variable for the rigidbody
+
+    public Collider coll; //The collider it will register
+
+    Quaternion lookRotation; // A variable to rotate to what we want to look at
+    Vector3 direction; // A variable to know the direction we look at
+
+    void Start()
+    {
+
+        rBody = GetComponent<Rigidbody>();
+    }
 
     void Update()
     {
 
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            
-            if (Input.GetTouch(i).phase == TouchPhase.Stationary || Input.GetTouch(i).phase == TouchPhase.Moved)
-            {
-                
-                // Construct a ray from the current touch coordinates.
-                ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
+        // Set the amount of touches to the variable "touch"
+        touch = Input.touchCount;
 
-                // out hit returns the hit of the raycast with the plane in the variable hit. From hit then you can access the point that hit.
-                if (coll.Raycast(ray, out hit, Mathf.Infinity))
-                {
-                    //Debug.DrawRay(ray.origin, ray.direction * raycastDistance, Color.blue, 3f);
-                    //float step = 2f * Time.deltaTime;
-                    transform.position = Vector3.Lerp(transform.position, hit.point + new Vector3(0, 0.5f, 0), 1.5f * Time.deltaTime);
-                    transform.LookAt(hit.point);
-                    transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
-                }
+        // Limit the touches to only register 1 finger
+        if (touch > 1)
+        {
+            touch = 1;
+        }
+
+        for (int i = 0; i < touch; ++i)
+        {
+
+            // Increment a counter to check make sure that movement doesn't happen on tabs
+            if ((Input.GetTouch(0).phase == TouchPhase.Began ||
+                 Input.GetTouch(0).phase == TouchPhase.Stationary ||
+                 Input.GetTouch(0).phase == TouchPhase.Moved) &&
+                 counter < 0.2f)
+            {
+                counter += Time.deltaTime;
             }
-        }   
+            if ((Input.GetTouch(0).phase == TouchPhase.Stationary || Input.GetTouch(0).phase == TouchPhase.Moved))
+            {
+                // Construct a ray from the current touch coordinates.
+                ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            }
+
+            if (Input.GetTouch(0).phase == TouchPhase.Ended)
+            {
+                counter = 0f;
+            }
+        }
     }
+
+    // Use fixedupdate for physics
+    void FixedUpdate()
+    {
+        rBody.AddForce(new Vector3(0f, 0f, 0.01f));
+
+        if (checkCanMove(counter))
+        {
+            if (coll.Raycast(ray, out hit, Mathf.Infinity) && sphereRadius(transform.position, hit.point, rotateRadius))
+            {
+                rotateChar();
+                rBody.AddRelativeForce(Vector3.forward * acceleration);
+            }
+            else
+            {
+                rotateChar();
+            }
+
+        }
+
+        if (rBody.velocity.magnitude > playerSpeed)
+        {
+            rBody.velocity = rBody.velocity.normalized * playerSpeed;
+        }
+    }
+
+    // Function to check if the finger is inside the rotation radius.
+    bool sphereRadius(Vector3 center, Vector3 point, float rad)
+    {
+
+        return Vector3.Distance(point, center) > rad;
+    }
+
+    // Function to smoothly rotate the character.
+    void rotateChar()
+    {
+        direction = (hit.point - transform.position).normalized;
+        lookRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+    }
+
+    // Function to check if the screen was tabbed or not
+    // Move the character if the sreen was not tabbed
+    bool checkCanMove(float counter)
+    {
+        if (counter < 0.1f)
+        {
+            return false;
+        }
+        else return true;
+    }
+
 }

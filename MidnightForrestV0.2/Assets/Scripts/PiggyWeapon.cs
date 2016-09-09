@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 public class PiggyWeapon : MonoBehaviour {
-	public int lightDamage = 100;
-	void Weapon (MonsterHealth monsterHealth){
-		if (monsterHealth != null)
-			monsterHealth.TakeDamage (lightDamage);
-	}
-	//monster dies when hit by the light
-	void OnTriggerEnter (Collider hittingCollider){
-		if(hittingCollider.tag == "monster"){
-            //Weapon (hittingCollider.GetComponent<MonsterHealth> ());
-            Debug.Log("Hit");
+
+    MonsterHealth monsterHP;
+
+    //monster dies when hit by the light
+	void OnTriggerStay (Collider hittingCollider)
+    {
+		if(hittingCollider.tag == "monster")
+        {
+            monsterHP.TakeDamage();
 		}
 	}
+    void Weapon(MonsterHealth monsterHealth)
+    {
+        if (monsterHealth != null)
+            monsterHealth.TakeDamage();
+    }
 }
