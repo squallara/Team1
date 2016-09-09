@@ -323,7 +323,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  waitPoints: []
   isDead: 1
   followPiggy: 0
   aiRadius: 15
@@ -331,7 +330,6 @@ MonoBehaviour:
   slowDown: 2
   heading: 0
   directionChangeInterval: 1
-  randomPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114000011567082088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -343,6 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bc4d9eea4bde342aeead13dbbeff96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  biteRange: 2
   timeBetweenBites: 1
   biteDamage: 25
 --- !u!135 &135000011664814908
