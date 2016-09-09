@@ -12,7 +12,7 @@ sysinfo.txt
 # Visual Studio / MonoDevelop / Rider generated #
 # ============================================= #
 [Ee]xported[Oo]bj/
-.vs/*
+*svd
 *.userprefs
 *.csproj
 *.pidb
@@ -21,7 +21,7 @@ sysinfo.txt
 *.user
 *.unityproj
 *.booproj
-/.idea
+
  
 # ============ #
 # OS generated #
