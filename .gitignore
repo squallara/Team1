@@ -3,8 +3,8 @@
 # =============== #
 [Tt]emp/
 [Oo]bj/
-[Bb]uild
-/[Ll]ibrary/
+[Bb]uild/
+[Ll]ibrary/
 sysinfo.txt
 *.stackdump
  
@@ -12,16 +12,16 @@ sysinfo.txt
 # Visual Studio / MonoDevelop / Rider generated #
 # ============================================= #
 [Ee]xported[Oo]bj/
-.vs/
-/*.userprefs
-/*.csproj
-/*.pidb
-/*.suo
-/*.sln*
-/*.user
-/*.unityproj
-/*.booproj
-/.idea*/
+.vs/*
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln*
+*.user
+*.unityproj
+*.booproj
+/.idea
  
 # ============ #
 # OS generated #
