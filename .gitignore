@@ -15,6 +15,10 @@ MidnightForrestV0.2/*.userprefs
 MidnightForrestV0.2/*.pidb
 MidnightForrestV0.2/*.booproj
 
+# Builds
+MidnightForrestV0.2/*.apk
+
+
 
 # ============ #
 # OS generated #
