@@ -1,12 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PolyCollider : MonoBehaviour {
-    void OnTriggerEnter(Collider collider)
+public class PolyCollider : MonoBehaviour
+{
+
+    MonsterMovement monsterMM;
+    MonsterHealth monsterHP;
+
+    void OnTriggerStay(Collider hittingCollider)
     {
-        if(collider.gameObject.tag == "monster")
+        if (hittingCollider.tag == "monster")
         {
-            Destroy(collider.gameObject);
-        }      
+            //monsterHP = hittingCollider.GetComponent<MonsterHealth>();
+            //monsterHP.TakeDamage();
+            monsterMM = hittingCollider.GetComponent<MonsterMovement>();
+            monsterMM.LightSpeed();
+        }
     }
 }
