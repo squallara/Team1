@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 304d4a15b87755f4aac70ee30bbc7973, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b3dcd1656e89d44bb7c278b39e4f45d, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
@@ -78,7 +78,6 @@ MonoBehaviour:
       Guid: de78274093c20a47b8bbb9f3c270cca3
   ExpandedItems:
   - /Team 1 - MGP-1
-  - /Team 1 - MGP-1/SoundBanks
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
