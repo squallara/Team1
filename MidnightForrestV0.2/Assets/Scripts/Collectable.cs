@@ -5,10 +5,11 @@ public class Collectable : MonoBehaviour {
 
     public GameObject playerAggro, playerSpotlight, prize;
 
-    void Start()
-    {
-        Physics.IgnoreCollision(GetComponent<Collider>(), GetComponent<Collider>());
-    }
+    //void Start()
+    //{
+    //    Physics.IgnoreCollision(playerAggro.GetComponent<Collider>(), prize.GetComponent<Collider>());
+    //    Physics.IgnoreCollision(playerSpotlight.GetComponent<Collider>(), prize.GetComponent<Collider>());
+    //}
 
     void OnTriggerEnter(Collider other)
     {
