@@ -326,8 +326,8 @@ MonoBehaviour:
   isDead: 1
   followPiggy: 0
   aiRadius: 15
-  startSpeed: 5
-  slowDown: 10
+  startSpeed: 3
+  slowDown: 2
   heading: 0
   directionChangeInterval: 1
 --- !u!114 &114000013912805880

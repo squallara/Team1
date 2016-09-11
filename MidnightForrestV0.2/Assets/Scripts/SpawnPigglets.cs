@@ -7,15 +7,14 @@ public class SpawnPigglets : MonoBehaviour {
     public GameObject[] prefeb;
 
     void Start()
-    { //this will spawn only one prefeb, if you want call it many time, create  a new function and call it or create for loop
+    { 
+        // adds 3 pigglets randomly between the 15 possibly positions you assign in the transform array
         for (int i = 0; i < 3; i++)
         {
-            int tele_num = Random.Range(0, 15);
+            int tele_num = Random.Range(0, 10);
 
             Instantiate(prefeb[i], teleport[tele_num].position + new Vector3(0, prefeb[i].GetComponent<MeshRenderer>().bounds.extents.y, 0), teleport[tele_num].rotation);
         }
 
     }
-
-    //And remember to asign all teleport transforms and prefebs in inspector
 }
