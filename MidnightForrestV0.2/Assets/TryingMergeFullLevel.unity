@@ -17749,8 +17749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9b984371a90c14090da83ea236820d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7f422d6
-  useOtherObject: 1
+  triggerList: f7e1664c
+  useOtherObject: 0
   valueGuid: 5696eb70bbe65541a11f0ba89977bfad
   eventID: -1850474830
   soundEmitterObject: {fileID: 0}
