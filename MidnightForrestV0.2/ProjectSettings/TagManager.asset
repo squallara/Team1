@@ -7,6 +7,8 @@ TagManager:
   - monster
   - Piggy
   - Prize
+  - Aggro
+  - Spotlight
   layers:
   - Default
   - TransparentFX
