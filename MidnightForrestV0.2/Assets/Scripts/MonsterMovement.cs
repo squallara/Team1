@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
-public class MonsterMovement : MonoBehaviour {
-
+public class MonsterMovement : MonoBehaviour
+{
     public Transform target; //what to follow (piggy)
 
-	private NavMeshAgent nav;
+    private NavMeshAgent nav;
     private BoxCollider boxCollider;
 
     public bool isDead = false;
@@ -16,14 +15,16 @@ public class MonsterMovement : MonoBehaviour {
     public float slowDown; //Speed decrease
     public float patrolDist;
 
-    void Awake () {
+    void Awake()
+    {
         boxCollider = GetComponent<BoxCollider>();
-        nav = GetComponent<NavMeshAgent> ();
+        nav = GetComponent<NavMeshAgent>();
         nav.speed = startSpeed;
         target = GameObject.FindGameObjectWithTag("Piggy").transform;
-        Patrol();     
-	}
-	void Update () {
+        Patrol();
+    }
+    void Update()
+    {
         if (followPiggy == true)
         {
             nav.SetDestination(target.position); //move towards target
@@ -38,17 +39,17 @@ public class MonsterMovement : MonoBehaviour {
         }
     }
 
-    void OnTriggerEnter (Collider aggro)
+    void OnTriggerEnter(Collider aggro)
     {
-        if(aggro.tag == "Aggro")
+        if (aggro.tag == "Aggro")
         {
             followPiggy = true;
         }
     }
 
-    void OnTriggerExit (Collider aggro)
+    void OnTriggerExit(Collider aggro)
     {
-        if(aggro.tag == "Aggro")
+        if (aggro.tag == "Aggro")
         {
             followPiggy = false;
         }
@@ -74,10 +75,8 @@ public class MonsterMovement : MonoBehaviour {
         GetComponent<NavMeshAgent>().enabled = false;
         MonsterManager.monstersAlive -= 1;
     }
-        void Patrol()
+    void Patrol()
     {
         nav.destination = WaitPoints.patrolPoint[Random.Range(0, WaitPoints.patrolPoint.Length)].position; //Selects a random Transform from WaitPoints.patrol and sets it as destination
     }
 }
-
-

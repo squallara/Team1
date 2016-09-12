@@ -13,7 +13,7 @@ public class CameraScript : MonoBehaviour {
         //Make sure the player is not null
 	    if(player != null) {
             //Set the position of the camera according to the player.
-            transform.position = player.position + new Vector3(3.0f, 10.0f, -6.0f);
+            transform.position = player.position + new Vector3(-15.0f, 25.0f, 0.0f);
             //Make the camera always look at the player
             transform.LookAt(player.transform);
         }

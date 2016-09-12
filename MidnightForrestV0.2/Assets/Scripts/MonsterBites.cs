@@ -10,6 +10,8 @@ public class MonsterBites : MonoBehaviour {
     float distance;
 	bool piggyInRange; //can monster bite?
 	float timer; //counting to next bite
+
+
 	void Awake(){
 		piggy = GameObject.FindGameObjectWithTag ("Piggy");
 		if(piggy != null)
@@ -38,10 +40,41 @@ public class MonsterBites : MonoBehaviour {
 		}
 	}
 	void Bite(){
-		timer = 0f;
+        timer = 0f;
 		if (piggyHealth.currentHealth > 0) {
 			piggyHealth.TakeDamage (biteDamage);
             Debug.Log("BITE!");
+            Handheld.Vibrate();
+            StartCoroutine("FadingLights");
 		}
 	}
+
+    IEnumerator FadingLights()
+    {
+        switch (PiggyHealth.piggHP)
+        {
+            case 3:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 3;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 3;
+                break;
+
+            case 2:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 2;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 2;
+                break;
+
+            case 1:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 1;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 1;
+                break;
+        }
+
+        yield return new WaitForSeconds(4);
+
+        FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 4;
+        FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 4;
+        piggyHealth.currentHealth = 100;
+        PiggyHealth.piggHP = 4;
+    }
+
 }
