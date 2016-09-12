@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 public class PiggyMovement : MonoBehaviour {
-	private int lifes = 3; 
+	//private int lifes = 3; 
+
+	// CONTROLLING THE CHARACTER IN UNITY EDITOR
+	#if  UNITY_EDITOR 
+
 	public float speed = 6f;
 	Vector3 movement; //direction of movement
 	Rigidbody piggyRB;
@@ -15,18 +19,19 @@ public class PiggyMovement : MonoBehaviour {
 		//move and turn piggy towards mouse
 		float h = Input.GetAxisRaw ("Horizontal");
 		float v = Input.GetAxisRaw ("Vertical");
-		if (Input.GetMouseButtonDown (0)) {
+		/*if (Input.GetMouseButtonDown (0)) {
 			Ray camRaym = Camera.main.ScreenPointToRay (Input.mousePosition); //cast ray
 			RaycastHit floorHitm;
 			if (Physics.Raycast (camRaym, out floorHitm, camRayLength, floorMask)) {
 				transform.position = floorHitm.point;
 			}
-		}
-		//Move(h, v);
-		//Turning ();
+		}*/
+		Move(h, v);
+		Turning ();
 	}
 	private void Move(float h, float v){
-		movement.Set (-h, 0f, -v); //movement vector direction
+		movement.Set (h, 0f, v); //movement vector direction
+		movement = Camera.main.transform.TransformDirection(movement);
 		movement = movement.normalized * speed * Time.deltaTime; //how much should move
 		piggyRB.MovePosition(transform.position + movement); //move to new position
 	}
@@ -53,4 +58,5 @@ public class PiggyMovement : MonoBehaviour {
 			}
 		}
 	}*/
+	#endif
 }
