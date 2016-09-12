@@ -23,7 +23,7 @@ GameObject:
   - 136: {fileID: 136000011908952982}
   - 23: {fileID: 23000010001915020}
   - 114: {fileID: 114000013108794850}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pigglet
   m_TagString: Prize
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012202036772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 478.70374, y: -2.5, z: -256.0194}
+  m_LocalPosition: {x: 39.004128, y: 0, z: 3.640625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -92,10 +92,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   OinkText: {fileID: 1000013307435040, guid: 49807937b50f7d44abc1f15154f5dca4, type: 2}
-  speed: 10
+  speed: 15
+  distanceSpeedfactor: 10
   height: 0
   minimumScale: 0.5
   maximumScale: 1
+  distanceScale: 120
   radius: 2
 --- !u!136 &136000011908952982
 CapsuleCollider:

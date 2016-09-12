@@ -4,8 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class Collectable : MonoBehaviour {
 
+    public static Collectable collectCurrent;
+
     public GameObject playerAggro, playerSpotlight, prize;
+    [HideInInspector]
     public int countPigglets = 0;
+
+    void Start()
+    {
+        collectCurrent = this;
+    }
 
 
     void OnTriggerEnter(Collider other)
@@ -14,8 +22,7 @@ public class Collectable : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
             countPigglets++;
-            //Debug.Log(countPigglets);
-            //Debug.Log(transform.FindChild("GatheredPigglets" + countPigglets));
+            Debug.Log("Collide");
             transform.FindChild("GatheredPigglets" + countPigglets).gameObject.SetActive(true);
         }
     }
