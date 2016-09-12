@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 68396156a07b12b4f9d3d396f238774b
-timeCreated: 1473693638
+guid: ecbda21f9a360574da07dd448d28f1c8
+timeCreated: 1473690686
 licenseType: Pro
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -10,7 +10,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Jack Brusher
+  - DHF Story Brush
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
