@@ -3,7 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class WaitPoints : MonoBehaviour {
-    protected WaitPoints() { }
+    public static Transform[] patrolPoint;
 
-    public GameObject[] posArray;
+    // Use this for initialization
+    void Start()
+    {
+        patrolPoint = gameObject.GetComponentsInChildren<Transform>(); // Fills the array with this GameObject's children (The patrol points must be children to the "Patrol Manager"
+    }
 }
