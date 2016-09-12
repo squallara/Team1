@@ -7,24 +7,34 @@ public class PigletOink : MonoBehaviour {
     public GameObject player;
     public GameObject OinkText;
     public float speed;
+    public float distanceSpeedfactor;
     public float height;
     public float minimumScale;
     public float maximumScale;
+    public float distanceScale;
 
     private float counter;
     private bool isShot = false;
     private bool isHit = false;
     public float radius;
+    float step;
+    bool isMoving = true;
+    float distanceFromStart;
+    float previousDist;
+    int distCounter;
 
     Vector3 dir; // A variable to know the direction we look at
     Vector3 startScale;
+
+    Vector3 previousPos;
+    Vector3 startPos;
 
     // Use this for initialization
 
     GameObject Oink;
 
     void Awake() {
-        
+
     }
     // Use this for initialization
     void Start() {
@@ -44,11 +54,15 @@ public class PigletOink : MonoBehaviour {
             counter = 0f;
         }
         if (isShot == true) {
-            float step = speed * Time.deltaTime;
+            if (Vector3.Distance(player.transform.position, Oink.transform.position) > 60f) {
+                step = speed * distanceSpeedfactor * Time.deltaTime;
+            } else {
+                step = speed * Time.deltaTime;
+            }
             Oink.transform.position = Vector3.MoveTowards(Oink.transform.position, player.transform.position + new Vector3(0f, height, 0f), step);
             Oink.transform.rotation = Camera.main.transform.rotation;
             scaleObject();
-            //Debug.Log("Distance" + Vector3.Distance(player.transform.position, Oink.transform.position));
+            amIMoving();
         }
         if (isShot == true) {
             destroyOink();
@@ -60,13 +74,15 @@ public class PigletOink : MonoBehaviour {
         Oink.transform.position = new Vector3(transform.position.x, height, transform.position.z);
         Oink.transform.rotation = Camera.main.transform.rotation;
         startScale = Oink.transform.localScale;
+        startPos = Oink.transform.position;
         isShot = true;
     }
 
     void destroyOink() {
-        if (sphereRadius(player.transform.position, Oink.transform.position, radius) && isShot == true) {
+        if ((sphereRadius(player.transform.position, Oink.transform.position, radius) && isShot == true)) {
             Destroy(Oink);
             isShot = false;
+            distCounter = 0;
         }
     }
 
@@ -77,17 +93,32 @@ public class PigletOink : MonoBehaviour {
 
     void scaleObject() {
         float scaleFactor;
-        if (Vector3.Distance(player.transform.position, transform.position) > 60f) {
+        if (Vector3.Distance(player.transform.position, transform.position) > distanceScale) {
             scaleFactor = minimumScale;
         } else {
-            scaleFactor = 1.0f - (Vector3.Distance(player.transform.position, transform.position) - 1f) / (60f - 1f);
+            scaleFactor = 1.0f - (Vector3.Distance(player.transform.position, transform.position) - 1f) / (distanceScale - 1f);
             if (scaleFactor < minimumScale) {
                 scaleFactor = minimumScale;
             }
         }
-
         Oink.transform.localScale = startScale * scaleFactor;
-        
 
+
+    }
+
+    void amIMoving() {
+        previousDist = distanceFromStart;
+        if(isShot) {
+            previousPos = Oink.transform.position;
+
+            distanceFromStart = Vector3.Distance(startPos, previousPos);
+            if ((Mathf.Round(distanceFromStart * 100f) / 100f) == (Mathf.Round(previousDist * 100f) / 100f)) {
+                distCounter += 1;
+            }
+
+            if(distCounter > 2) {
+                destroyOink();
+            }
+        }
     }
 }

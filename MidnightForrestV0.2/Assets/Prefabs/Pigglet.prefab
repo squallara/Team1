@@ -23,7 +23,7 @@ GameObject:
   - 136: {fileID: 136000011908952982}
   - 23: {fileID: 23000010001915020}
   - 114: {fileID: 114000013108794850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pigglet
   m_TagString: Prize
   m_Icon: {fileID: 0}
@@ -92,10 +92,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   OinkText: {fileID: 1000013307435040, guid: 49807937b50f7d44abc1f15154f5dca4, type: 2}
-  speed: 10
+  speed: 15
+  distanceSpeedfactor: 10
   height: 0
   minimumScale: 0.5
   maximumScale: 1
+  distanceScale: 120
   radius: 2
 --- !u!136 &136000011908952982
 CapsuleCollider:
