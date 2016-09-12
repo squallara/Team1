@@ -2,22 +2,28 @@
 using System.Collections;
 public class PiggyHealth : MonoBehaviour {
 	public int startingHealth = 100;
+    [HideInInspector]
 	public int currentHealth;
 	public Light light;
 	PiggyMovement piggyMovement;
-	Animator anim;	
 	//PiggyWeapon piggyWeapon;
 	bool isDead;
+
+    [HideInInspector]
+    public static int piggHP = 4; //steps of pigg´s health before it dies ( created for the fading light mechanism)
+
+
+
+
 	void Awake(){
 		piggyMovement = GetComponent<PiggyMovement> ();
 		//piggyWeapon = GetComponent<PiggyWeapon> ();
 		currentHealth = startingHealth; //initial full health
-		anim = GetComponent<Animator> ();
 	}
 	public void TakeDamage(int amount){
 		currentHealth -= amount;
+        piggHP--;
 		light.intensity -= 0.01f * amount;
-		anim.SetTrigger ("Recoil");
 		if (currentHealth <= 0 && !isDead) {
 			Death (); //should die
 		}
@@ -25,31 +31,15 @@ public class PiggyHealth : MonoBehaviour {
 	void Death(){
 		isDead = true;
 		piggyMovement.enabled = false;
-		anim.SetTrigger ("Die");  // for death we need animation
 		//piggyWeapon.enabled = false; //turn of weapons and their effects
 		gameObject.SetActive(false); //hide the piggy or death animation for future!!
 		print ("you got eaten!!!");
 		Application.LoadLevel ("game over");
 	}
-	void OnTriggerEnter(Collider hittingCollider){
-		if (gameObject.tag == "Prize") {
-			print ("you win!!!");
-			Application.LoadLevel ("you win");
-		}
-		else if (gameObject.tag == "monster"){ 
-			gameObject.GetComponent<Animator> ().SetBool ("Emerged", true);
-			Debug.Log ("monster emerged");
-		}
-	}
-
-	public void StopRecoilEvent(){
-		anim.SetBool("Recoiled", false);
-	}
-
-	void OnTriggerExit(Collider hittingCollider){
-		
-		if (gameObject.tag == "monster"){ 
-			gameObject.GetComponent<Animator> ().SetBool("Emerged", false);
-		}
-	}
+	//void OnTriggerEnter(Collider hittingCollider){
+	//	if (gameObject.tag == "Prize") {
+	//		print ("you win!!!");
+	//		Application.LoadLevel ("you win");
+	//	}
+	//}
 }

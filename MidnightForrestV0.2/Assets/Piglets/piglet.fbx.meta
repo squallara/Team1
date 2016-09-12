@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: a93f6b2cbbff91a4a89a35a4bcc539a1
+timeCreated: 1473693041
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: piglet:ctrl_head_01
+    100004: piglet:ctrl_head_02
+    100006: piglet:ctrl_l_back_foot
+    100008: piglet:ctrl_l_back_hip
+    100010: piglet:ctrl_l_back_knee
+    100012: piglet:ctrl_l_ear_01
+    100014: piglet:ctrl_l_ear_02
+    100016: piglet:ctrl_l_ear_03
+    100018: piglet:ctrl_l_earEnd
+    100020: piglet:ctrl_l_eye
+    100022: piglet:ctrl_l_front_foot
+    100024: piglet:ctrl_l_front_hip
+    100026: piglet:ctrl_l_front_knee
+    100028: piglet:ctrl_main
+    100030: piglet:ctrl_nose_01
+    100032: piglet:ctrl_nose_02
+    100034: piglet:ctrl_noseEnd
+    100036: piglet:ctrl_piglet
+    100038: piglet:ctrl_r_back_foot
+    100040: piglet:ctrl_r_back_hip
+    100042: piglet:ctrl_r_back_knee
+    100044: piglet:ctrl_r_ear_01
+    100046: piglet:ctrl_r_ear_02
+    100048: piglet:ctrl_r_ear_03
+    100050: piglet:ctrl_r_earEnd
+    100052: piglet:ctrl_r_eye
+    100054: piglet:ctrl_r_front_foot
+    100056: piglet:ctrl_r_front_hip
+    100058: piglet:ctrl_r_front_knee
+    100060: piglet:ctrl_spine_back
+    100062: piglet:ctrl_spine_front
+    100064: piglet:ctrl_tail_01
+    100066: piglet:ctrl_tail_02
+    100068: piglet:ctrl_tail_03
+    100070: piglet:ctrl_tail_04
+    100072: piglet:geo_piglet
+    100074: piglet:grp_ctrl
+    100076: piglet:grp_geo
+    100078: piglet:grp_skeleton
+    100080: piglet:jnt_head_01
+    100082: piglet:jnt_head_02
+    100084: piglet:jnt_l_back_foot
+    100086: piglet:jnt_l_back_hip
+    100088: piglet:jnt_l_back_knee
+    100090: piglet:jnt_l_ear_01
+    100092: piglet:jnt_l_ear_02
+    100094: piglet:jnt_l_ear_03
+    100096: piglet:jnt_l_earEnd
+    100098: piglet:jnt_l_eye
+    100100: piglet:jnt_l_front_foot
+    100102: piglet:jnt_l_front_hip
+    100104: piglet:jnt_l_front_knee
+    100106: piglet:jnt_main
+    100108: piglet:jnt_nose_01
+    100110: piglet:jnt_nose_02
+    100112: piglet:jnt_noseEnd
+    100114: piglet:jnt_r_back_foot
+    100116: piglet:jnt_r_back_hip
+    100118: piglet:jnt_r_back_knee
+    100120: piglet:jnt_r_ear_01
+    100122: piglet:jnt_r_ear_02
+    100124: piglet:jnt_r_ear_03
+    100126: piglet:jnt_r_earEnd
+    100128: piglet:jnt_r_eye
+    100130: piglet:jnt_r_front_foot
+    100132: piglet:jnt_r_front_hip
+    100134: piglet:jnt_r_front_knee
+    100136: piglet:jnt_spine_back
+    100138: piglet:jnt_spine_front
+    100140: piglet:jnt_tail_01
+    100142: piglet:jnt_tail_02
+    100144: piglet:jnt_tail_03
+    100146: piglet:jnt_tail_04
+    400000: //RootNode
+    400002: piglet:ctrl_head_01
+    400004: piglet:ctrl_head_02
+    400006: piglet:ctrl_l_back_foot
+    400008: piglet:ctrl_l_back_hip
+    400010: piglet:ctrl_l_back_knee
+    400012: piglet:ctrl_l_ear_01
+    400014: piglet:ctrl_l_ear_02
+    400016: piglet:ctrl_l_ear_03
+    400018: piglet:ctrl_l_earEnd
+    400020: piglet:ctrl_l_eye
+    400022: piglet:ctrl_l_front_foot
+    400024: piglet:ctrl_l_front_hip
+    400026: piglet:ctrl_l_front_knee
+    400028: piglet:ctrl_main
+    400030: piglet:ctrl_nose_01
+    400032: piglet:ctrl_nose_02
+    400034: piglet:ctrl_noseEnd
+    400036: piglet:ctrl_piglet
+    400038: piglet:ctrl_r_back_foot
+    400040: piglet:ctrl_r_back_hip
+    400042: piglet:ctrl_r_back_knee
+    400044: piglet:ctrl_r_ear_01
+    400046: piglet:ctrl_r_ear_02
+    400048: piglet:ctrl_r_ear_03
+    400050: piglet:ctrl_r_earEnd
+    400052: piglet:ctrl_r_eye
+    400054: piglet:ctrl_r_front_foot
+    400056: piglet:ctrl_r_front_hip
+    400058: piglet:ctrl_r_front_knee
+    400060: piglet:ctrl_spine_back
+    400062: piglet:ctrl_spine_front
+    400064: piglet:ctrl_tail_01
+    400066: piglet:ctrl_tail_02
+    400068: piglet:ctrl_tail_03
+    400070: piglet:ctrl_tail_04
+    400072: piglet:geo_piglet
+    400074: piglet:grp_ctrl
+    400076: piglet:grp_geo
+    400078: piglet:grp_skeleton
+    400080: piglet:jnt_head_01
+    400082: piglet:jnt_head_02
+    400084: piglet:jnt_l_back_foot
+    400086: piglet:jnt_l_back_hip
+    400088: piglet:jnt_l_back_knee
+    400090: piglet:jnt_l_ear_01
+    400092: piglet:jnt_l_ear_02
+    400094: piglet:jnt_l_ear_03
+    400096: piglet:jnt_l_earEnd
+    400098: piglet:jnt_l_eye
+    400100: piglet:jnt_l_front_foot
+    400102: piglet:jnt_l_front_hip
+    400104: piglet:jnt_l_front_knee
+    400106: piglet:jnt_main
+    400108: piglet:jnt_nose_01
+    400110: piglet:jnt_nose_02
+    400112: piglet:jnt_noseEnd
+    400114: piglet:jnt_r_back_foot
+    400116: piglet:jnt_r_back_hip
+    400118: piglet:jnt_r_back_knee
+    400120: piglet:jnt_r_ear_01
+    400122: piglet:jnt_r_ear_02
+    400124: piglet:jnt_r_ear_03
+    400126: piglet:jnt_r_earEnd
+    400128: piglet:jnt_r_eye
+    400130: piglet:jnt_r_front_foot
+    400132: piglet:jnt_r_front_hip
+    400134: piglet:jnt_r_front_knee
+    400136: piglet:jnt_spine_back
+    400138: piglet:jnt_spine_front
+    400140: piglet:jnt_tail_01
+    400142: piglet:jnt_tail_02
+    400144: piglet:jnt_tail_03
+    400146: piglet:jnt_tail_04
+    4300000: piglet:geo_piglet
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: piglet:geo_piglet
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

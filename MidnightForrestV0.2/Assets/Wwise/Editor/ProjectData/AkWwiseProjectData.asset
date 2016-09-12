@@ -16,9 +16,39 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}'
-    m_lastTimePsrt1: 117519986
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: 650172984
+    m_lastTimePart2: -1999381744
     List:
+    - Name: Ambiance
+      Path: Default Work Unit\Ambiance
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiance
+        ObjectType: 3
+      ID: -1313589867
+      Guid: ecb0000118a939479c16c27c53881f47
+      maxAttenuation: 0
+    - Name: Pig_Swim
+      Path: Default Work Unit\Pig_Swim
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pig_Swim
+        ObjectType: 3
+      ID: -1740752726
+      Guid: f4e714cffea2c44cb313f975680b6679
+      maxAttenuation: 0
+    - Name: Pig_Swim_Stop
+      Path: Default Work Unit\Pig_Swim_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pig_Swim_Stop
+        ObjectType: 3
+      ID: 1750874649
+      Guid: a6b6b91a4f95244eb1e8d969c82c7071
+      maxAttenuation: 0
     - Name: Piglet_Pickup
       Path: Default Work Unit\Piglet_Pickup
       PathAndIcons:
@@ -43,29 +73,67 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}'
-    m_lastTimePsrt1: 119060074
-    m_lastTimePart2: -1999381792
-    List: []
+    m_lastTimePsrt1: -1246847158
+    m_lastTimePart2: -1999381744
+    List:
+    - Name: env_cave
+      Path: Default Work Unit\Master Audio Bus\Environmental\env_cave
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Environmental
+        ObjectType: 2
+      - ElementName: env_cave
+        ObjectType: 1
+      ID: -1551241738
+      Guid: fd1d85d6100cf444b3f67c24588fdccd
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{276AEDB6-AD9C-4E68-B130-87D5120DA1D8}'
-    m_lastTimePsrt1: 163262602
-    m_lastTimePart2: -1999381792
-    List: []
+    m_lastTimePsrt1: 1694132695
+    m_lastTimePart2: -1999381744
+    List:
+    - Name: Menu_Screens
+      Path: Default Work Unit\Menu_Screens
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Menu_Screens
+        ObjectType: 9
+      ID: -1654087606
+      Guid: f1b9adeb6c5be348a71e6a9def50afb8
+      values:
+      - In_Game
+      - In_Menu
+      - None
+      ValueIcons:
+      - ElementName: In_Game
+        ObjectType: 8
+      - ElementName: In_Menu
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      valueIDs: 892ae1b092273f61db3ba32c
+      ValueGuids:
+      - bytes: ce6174e7fdb2e047921f5c8529d2576d
+      - bytes: 4bd48efc94326e48852f88bc828dfa33
+      - bytes: 4cb6b2fbcb360f4fb0776f06b25fbaee
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{128DF6EF-6CC3-48E7-A1EB-906330253347}'
-    m_lastTimePsrt1: 163272603
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -490138013
+    m_lastTimePart2: -1999382542
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{634FB385-0020-4521-9C31-E7BA27A19102}'
-    m_lastTimePsrt1: 163222600
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -673724377
+    m_lastTimePart2: -1999381744
     List:
     - Name: Main
       Path: Default Work Unit\Main
@@ -78,6 +146,8 @@ MonoBehaviour:
       Guid: de78274093c20a47b8bbb9f3c270cca3
   ExpandedItems:
   - /Team 1 - MGP-1
+  - /Team 1 - MGP-1/Events
+  - /Team 1 - MGP-1/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
