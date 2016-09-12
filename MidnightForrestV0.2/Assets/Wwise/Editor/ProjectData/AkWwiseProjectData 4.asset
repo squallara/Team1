@@ -9,15 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b3dcd1656e89d44bb7c278b39e4f45d, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 4
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}'
-    m_lastTimePsrt1: 117519986
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -183826926
+    m_lastTimePart2: -1999382314
     List:
     - Name: Piglet_Pickup
       Path: Default Work Unit\Piglet_Pickup
@@ -43,29 +43,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}'
-    m_lastTimePsrt1: 119060074
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -184516965
+    m_lastTimePart2: -1999382314
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{276AEDB6-AD9C-4E68-B130-87D5120DA1D8}'
-    m_lastTimePsrt1: 163262602
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -193697490
+    m_lastTimePart2: -1999382314
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{128DF6EF-6CC3-48E7-A1EB-906330253347}'
-    m_lastTimePsrt1: 163272603
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -193707491
+    m_lastTimePart2: -1999382314
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{634FB385-0020-4521-9C31-E7BA27A19102}'
-    m_lastTimePsrt1: 163222600
-    m_lastTimePart2: -1999381792
+    m_lastTimePsrt1: -193677489
+    m_lastTimePart2: -1999382314
     List:
     - Name: Main
       Path: Default Work Unit\Main
