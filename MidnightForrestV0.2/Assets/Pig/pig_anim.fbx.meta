@@ -230,7 +230,7 @@ ModelImporter:
       name: Swim
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 24
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -697,7 +697,15 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 1
+        functionName: StopRecoilEvent
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 570abff1bb511ce4a8242346b25735ad,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1

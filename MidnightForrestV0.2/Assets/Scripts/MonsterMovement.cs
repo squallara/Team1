@@ -66,9 +66,14 @@ public class MonsterMovement : MonoBehaviour
         }
     }
 
+    public void RegainSpeed()
+    {
+        nav.speed = startSpeed;
+    }
+
     void Death()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject);
         isDead = true;
         followPiggy = false;
         boxCollider.isTrigger = true;
