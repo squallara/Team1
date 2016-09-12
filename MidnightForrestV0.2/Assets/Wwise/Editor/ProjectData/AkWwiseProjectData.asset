@@ -76,7 +76,8 @@ MonoBehaviour:
         ObjectType: 7
       ID: -1133058374
       Guid: de78274093c20a47b8bbb9f3c270cca3
-  ExpandedItems: []
+  ExpandedItems:
+  - /Team 1 - MGP-1
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
