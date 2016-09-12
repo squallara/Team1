@@ -58,7 +58,7 @@ public class MonsterMovement : MonoBehaviour
     public void LightSpeed()
     {
         nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed);
-        Debug.Log(nav.speed);
+        //Debug.Log(nav.speed);
         if (nav.speed <= 0 && isDead == false)
         {
             Debug.Log("Test");
@@ -66,9 +66,14 @@ public class MonsterMovement : MonoBehaviour
         }
     }
 
+    public void RegainSpeed()
+    {
+        nav.speed = startSpeed;
+    }
+
     void Death()
     {
-        Destroy(gameObject, 1f);
+        Destroy(gameObject);
         isDead = true;
         followPiggy = false;
         boxCollider.isTrigger = true;
