@@ -6,46 +6,37 @@ public class MonsterMovement : MonoBehaviour {
 
     public Transform target; //what to follow (piggy)
 
-    private WaitPoints waitPoint;
 	private NavMeshAgent nav;
     private BoxCollider boxCollider;
 
-    public bool isDead = true;
+    public bool isDead = false;
     public bool followPiggy = false;
-
-    public int aiRadius = 15;
 
     public float startSpeed = 5.0f; //Monster speed
     public float slowDown; //Speed decrease
-    public float heading;
-    public float directionChangeInterval = 1;
-
-    private float currentSpeed; //Current Speed
+    public float patrolDist;
 
     void Awake () {
         boxCollider = GetComponent<BoxCollider>();
         nav = GetComponent<NavMeshAgent> ();
         nav.speed = startSpeed;
-        target = GameObject.FindGameObjectWithTag("Piggy").transform;     
+        target = GameObject.FindGameObjectWithTag("Piggy").transform;
+        Patrol();     
 	}
 	void Update () {
         if (followPiggy == true)
         {
             nav.SetDestination(target.position); //move towards target
         }
-        else nav.SetDestination(Vector3.zero);
-        //{
-            //nav.SetDestination(waitPoint.posArray[1].transform.position); To-do stuff
-        //}
+
+        if (isDead == false)
+        {
+            if (nav.remainingDistance < patrolDist)
+            {
+                Patrol(); //Only reassigns new position when close to selected position
+            }
+        }
     }
-	//dies when hit by the light
-	void OnColliderEnter (Collision col){
-		if(col.gameObject.name == "piggyLight"){
-			Destroy(gameObject);
-			MonsterManager.monstersAlive -= 1;
-			Debug.Log ("Sea monster killed");
-		}
-	}
 
     void OnTriggerEnter (Collider aggro)
     {
@@ -67,19 +58,25 @@ public class MonsterMovement : MonoBehaviour {
     {
         nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed);
         Debug.Log(nav.speed);
-        if (nav.speed <= 1.0f)
+        if (nav.speed <= 0 && isDead == false)
         {
+            Debug.Log("Test");
             Death();
         }
     }
 
     void Death()
     {
-            isDead = true;
-            followPiggy = false;
-            boxCollider.isTrigger = true;
-            GetComponent<NavMeshAgent>().enabled = false;
-            Destroy(gameObject, 1f);
+        Destroy(gameObject, 1f);
+        isDead = true;
+        followPiggy = false;
+        boxCollider.isTrigger = true;
+        GetComponent<NavMeshAgent>().enabled = false;
+        MonsterManager.monstersAlive -= 1;
+    }
+        void Patrol()
+    {
+        nav.destination = WaitPoints.patrolPoint[Random.Range(0, WaitPoints.patrolPoint.Length)].position; //Selects a random Transform from WaitPoints.patrol and sets it as destination
     }
 }
 
