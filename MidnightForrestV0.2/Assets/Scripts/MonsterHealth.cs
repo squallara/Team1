@@ -36,5 +36,5 @@ public class MonsterHealth : MonoBehaviour {
 		GetComponent<NavMeshAgent> ().enabled = false;
 		Destroy(gameObject, 1f);
         Handheld.Vibrate();
-    }
+	}
 }
