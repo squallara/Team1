@@ -4,7 +4,7 @@
 QualitySettings:
   m_ObjectHideFlags: 0
   serializedVersion: 5
-  m_CurrentQuality: 3
+  m_CurrentQuality: 6
   m_QualitySettings:
   - serializedVersion: 2
     name: Fastest
@@ -162,8 +162,34 @@ QualitySettings:
     asyncUploadTimeSlice: 2
     asyncUploadBufferSize: 4
     excludedTargetPlatforms: []
+  - serializedVersion: 2
+    name: Custom
+    pixelLightCount: 2
+    shadows: 1
+    shadowResolution: 1
+    shadowProjection: 1
+    shadowCascades: 2
+    shadowDistance: 40
+    shadowNearPlaneOffset: 2
+    shadowCascade2Split: 0.33333334
+    shadowCascade4Split: {x: 0.06666667, y: 0.19999999, z: 0.46666664}
+    blendWeights: 2
+    textureQuality: 0
+    anisotropicTextures: 2
+    antiAliasing: 0
+    softParticles: 0
+    softVegetation: 1
+    realtimeReflectionProbes: 1
+    billboardsFaceCameraPosition: 1
+    vSyncCount: 0
+    lodBias: 1
+    maximumLODLevel: 0
+    particleRaycastBudget: 256
+    asyncUploadTimeSlice: 2
+    asyncUploadBufferSize: 4
+    excludedTargetPlatforms: []
   m_PerPlatformDefaultQuality:
-    Android: 3
+    Android: 6
     Nintendo 3DS: 5
     PS3: 5
     PS4: 5

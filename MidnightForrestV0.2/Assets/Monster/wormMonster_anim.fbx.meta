@@ -58,6 +58,7 @@ ModelImporter:
     7400000: Emerge
     7400002: Attack
     7400004: Recoil
+    7400006: Idle
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -248,6 +249,84 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: WormMonster:grp_joints
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016/WormMonster:jt_bnd_spine_017
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016/WormMonster:jt_bnd_spine_017/WormMonster:jt_bnd_spine_018
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_bnd_jawLower_01
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_bnd_jawLower_01/WormMonster:jt_jawLower_end
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_jawUpper_start
+        weight: 1
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_jawUpper_start/WormMonster:jt_bnd_jawUpper_01
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 4
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
