@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Piglet_Scream" ID="{70EB9656-E6BB-4155-A11F-0BA89977BFAD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{9E56B24D-7B51-4360-9C1D-C97A416DA0AE}" ShortID="289538318" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5D0067C5-DBEF-43F1-8878-A97673E1D1CA}" Global="false">
+									<ObjectRef Name="Pig_Scream" ID="{AD21B97C-C232-464B-A5E7-BC0B6DE4860A}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Piglet_Pickup" ID="{B3AE2627-F9D4-44D8-91BB-90A58D92D05E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E94A2031-3053-4A2B-9489-641A9E8CF373}" ShortID="513133966" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BD12C501-6F43-4D7D-9072-E230EDFBB321}" Global="false">
+									<ObjectRef Name="Pig_Happy" ID="{31F90E08-A26E-45F3-BD4E-1143F290BC77}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pig_Swim" ID="{CF14E7F4-A2FE-4CC4-B313-F975680B6679}">
+					<ChildrenList>
+						<Action Name="Play" ID="{51916B20-1CF5-4948-934F-7EA0CAFAC670}" ShortID="363855662" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DF65E6BD-3E1F-42CC-B2D8-F6B4DE1141DE}" Global="false">
+									<ObjectRef Name="Pig_Swim" ID="{59371342-08BB-47C0-8B95-B78520A70071}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pig_Swim_Stop" ID="{1AB9B6A6-954F-4E24-B1E8-D969C82C7071}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{48F2ACE7-52E0-446B-96DA-E9218F4CB5BC}" ShortID="577693069" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{24E78A5D-8729-4AA5-842F-45E13C864FC0}" Global="false">
+									<ObjectRef Name="Pig_Swim" ID="{59371342-08BB-47C0-8B95-B78520A70071}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Ambiance" ID="{0100B0EC-A918-4739-9C16-C27C53881F47}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8E195380-9FB3-41A0-8F75-AE719B5E6A3A}" ShortID="289388737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6F1653A2-6924-4BC3-9F33-DFB45331D1F6}" Global="false">
+									<ObjectRef Name="Ambiance_Drips" ID="{BF0A3DFF-C416-4EBB-88AC-BF5B937C8704}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{CA709BB4-E591-4717-AC26-1CFC265B8693}" ShortID="50051198" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="5">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{90DB0D70-2AB2-4A00-AEF2-96B8CE14F9D7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="3"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{BE516810-0F62-4788-8BDE-4E8525F4B120}" Global="false">
+									<ObjectRef Name="Bat_Screams" ID="{DFA5580B-8B04-4D7F-A64D-0433984D9A97}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
