@@ -46,17 +46,35 @@ public class MonsterBites : MonoBehaviour {
             Debug.Log("BITE!");
             Handheld.Vibrate();
             StartCoroutine("FadingLights");
-            //FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity
 		}
 	}
 
     IEnumerator FadingLights()
     {
-        FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 1;
-        FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 1;
-        yield return new WaitForSeconds(2);
+        switch (PiggyHealth.piggHP)
+        {
+            case 3:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 3;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 3;
+                break;
+
+            case 2:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 2;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 2;
+                break;
+
+            case 1:
+                FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 1;
+                FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 1;
+                break;
+        }
+
+        yield return new WaitForSeconds(4);
+
         FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 4;
         FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 4;
+        piggyHealth.currentHealth = 100;
+        PiggyHealth.piggHP = 4;
     }
 
 }
