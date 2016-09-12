@@ -100,8 +100,9 @@ public class TouchInput : MonoBehaviour
     {
         direction = (hit.point - transform.position).normalized;
         lookRotation = Quaternion.LookRotation(direction);
+
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
-        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
     }
 
     // Function to check if the screen was tabbed or not
