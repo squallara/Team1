@@ -1,0 +1,908 @@
+fileFormatVersion: 2
+guid: f5359a430f20a9949a7f266b446c756f
+timeCreated: 1473692733
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: piglet:ctrl_head_01
+    100002: piglet:ctrl_head_02
+    100004: piglet:ctrl_l_back_foot
+    100006: piglet:ctrl_l_back_hip
+    100008: piglet:ctrl_l_back_knee
+    100010: piglet:ctrl_l_ear_01
+    100012: piglet:ctrl_l_ear_02
+    100014: piglet:ctrl_l_ear_03
+    100016: piglet:ctrl_l_earEnd
+    100018: piglet:ctrl_l_eye
+    100020: piglet:ctrl_l_front_foot
+    100022: piglet:ctrl_l_front_hip
+    100024: piglet:ctrl_l_front_knee
+    100026: piglet:ctrl_main
+    100028: piglet:ctrl_nose_01
+    100030: piglet:ctrl_nose_02
+    100032: piglet:ctrl_noseEnd
+    100034: piglet:ctrl_piglet
+    100036: piglet:ctrl_r_back_foot
+    100038: piglet:ctrl_r_back_hip
+    100040: piglet:ctrl_r_back_knee
+    100042: piglet:ctrl_r_ear_01
+    100044: piglet:ctrl_r_ear_02
+    100046: piglet:ctrl_r_ear_03
+    100048: piglet:ctrl_r_earEnd
+    100050: piglet:ctrl_r_eye
+    100052: piglet:ctrl_r_front_foot
+    100054: piglet:ctrl_r_front_hip
+    100056: piglet:ctrl_r_front_knee
+    100058: piglet:ctrl_spine_back
+    100060: piglet:ctrl_spine_front
+    100062: piglet:ctrl_tail_01
+    100064: piglet:ctrl_tail_02
+    100066: piglet:ctrl_tail_03
+    100068: piglet:ctrl_tail_04
+    100070: piglet:grp_ctrl
+    100072: piglet:grp_skeleton
+    100074: piglet:jnt_head_01
+    100076: piglet:jnt_head_02
+    100078: piglet:jnt_l_back_foot
+    100080: piglet:jnt_l_back_hip
+    100082: piglet:jnt_l_back_knee
+    100084: piglet:jnt_l_ear_01
+    100086: piglet:jnt_l_ear_02
+    100088: piglet:jnt_l_ear_03
+    100090: piglet:jnt_l_earEnd
+    100092: piglet:jnt_l_eye
+    100094: piglet:jnt_l_front_foot
+    100096: piglet:jnt_l_front_hip
+    100098: piglet:jnt_l_front_knee
+    100100: piglet:jnt_main
+    100102: piglet:jnt_nose_01
+    100104: piglet:jnt_nose_02
+    100106: piglet:jnt_noseEnd
+    100108: piglet:jnt_r_back_foot
+    100110: piglet:jnt_r_back_hip
+    100112: piglet:jnt_r_back_knee
+    100114: piglet:jnt_r_ear_01
+    100116: piglet:jnt_r_ear_02
+    100118: piglet:jnt_r_ear_03
+    100120: piglet:jnt_r_earEnd
+    100122: piglet:jnt_r_eye
+    100124: piglet:jnt_r_front_foot
+    100126: piglet:jnt_r_front_hip
+    100128: piglet:jnt_r_front_knee
+    100130: piglet:jnt_spine_back
+    100132: piglet:jnt_spine_front
+    100134: piglet:jnt_tail_01
+    100136: piglet:jnt_tail_02
+    100138: piglet:jnt_tail_03
+    100140: piglet:jnt_tail_04
+    100142: //RootNode
+    400000: piglet:ctrl_head_01
+    400002: piglet:ctrl_head_02
+    400004: piglet:ctrl_l_back_foot
+    400006: piglet:ctrl_l_back_hip
+    400008: piglet:ctrl_l_back_knee
+    400010: piglet:ctrl_l_ear_01
+    400012: piglet:ctrl_l_ear_02
+    400014: piglet:ctrl_l_ear_03
+    400016: piglet:ctrl_l_earEnd
+    400018: piglet:ctrl_l_eye
+    400020: piglet:ctrl_l_front_foot
+    400022: piglet:ctrl_l_front_hip
+    400024: piglet:ctrl_l_front_knee
+    400026: piglet:ctrl_main
+    400028: piglet:ctrl_nose_01
+    400030: piglet:ctrl_nose_02
+    400032: piglet:ctrl_noseEnd
+    400034: piglet:ctrl_piglet
+    400036: piglet:ctrl_r_back_foot
+    400038: piglet:ctrl_r_back_hip
+    400040: piglet:ctrl_r_back_knee
+    400042: piglet:ctrl_r_ear_01
+    400044: piglet:ctrl_r_ear_02
+    400046: piglet:ctrl_r_ear_03
+    400048: piglet:ctrl_r_earEnd
+    400050: piglet:ctrl_r_eye
+    400052: piglet:ctrl_r_front_foot
+    400054: piglet:ctrl_r_front_hip
+    400056: piglet:ctrl_r_front_knee
+    400058: piglet:ctrl_spine_back
+    400060: piglet:ctrl_spine_front
+    400062: piglet:ctrl_tail_01
+    400064: piglet:ctrl_tail_02
+    400066: piglet:ctrl_tail_03
+    400068: piglet:ctrl_tail_04
+    400070: piglet:grp_ctrl
+    400072: piglet:grp_skeleton
+    400074: piglet:jnt_head_01
+    400076: piglet:jnt_head_02
+    400078: piglet:jnt_l_back_foot
+    400080: piglet:jnt_l_back_hip
+    400082: piglet:jnt_l_back_knee
+    400084: piglet:jnt_l_ear_01
+    400086: piglet:jnt_l_ear_02
+    400088: piglet:jnt_l_ear_03
+    400090: piglet:jnt_l_earEnd
+    400092: piglet:jnt_l_eye
+    400094: piglet:jnt_l_front_foot
+    400096: piglet:jnt_l_front_hip
+    400098: piglet:jnt_l_front_knee
+    400100: piglet:jnt_main
+    400102: piglet:jnt_nose_01
+    400104: piglet:jnt_nose_02
+    400106: piglet:jnt_noseEnd
+    400108: piglet:jnt_r_back_foot
+    400110: piglet:jnt_r_back_hip
+    400112: piglet:jnt_r_back_knee
+    400114: piglet:jnt_r_ear_01
+    400116: piglet:jnt_r_ear_02
+    400118: piglet:jnt_r_ear_03
+    400120: piglet:jnt_r_earEnd
+    400122: piglet:jnt_r_eye
+    400124: piglet:jnt_r_front_foot
+    400126: piglet:jnt_r_front_hip
+    400128: piglet:jnt_r_front_knee
+    400130: piglet:jnt_spine_back
+    400132: piglet:jnt_spine_front
+    400134: piglet:jnt_tail_01
+    400136: piglet:jnt_tail_02
+    400138: piglet:jnt_tail_03
+    400140: piglet:jnt_tail_04
+    400142: //RootNode
+    7400000: Idle_001
+    7400002: Jump
+    7400004: Idle_002
+    7400006: Recoil
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle_001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 117
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: piglet:grp_ctrl
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee/piglet:ctrl_l_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee/piglet:ctrl_r_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03/piglet:ctrl_tail_04
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_l_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02/piglet:ctrl_noseEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_r_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03/piglet:ctrl_l_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03/piglet:ctrl_r_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee/piglet:ctrl_l_front_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee/piglet:ctrl_r_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee/piglet:jnt_l_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee/piglet:jnt_r_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03/piglet:jnt_tail_04
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02/piglet:jnt_noseEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03/piglet:jnt_l_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03/piglet:jnt_r_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee/piglet:jnt_l_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee/piglet:jnt_r_front_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 118
+      lastFrame: 155
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: piglet:grp_ctrl
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee/piglet:ctrl_l_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee/piglet:ctrl_r_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03/piglet:ctrl_tail_04
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_l_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02/piglet:ctrl_noseEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_r_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03/piglet:ctrl_l_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03/piglet:ctrl_r_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee/piglet:ctrl_l_front_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee/piglet:ctrl_r_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee/piglet:jnt_l_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee/piglet:jnt_r_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03/piglet:jnt_tail_04
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02/piglet:jnt_noseEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03/piglet:jnt_l_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03/piglet:jnt_r_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee/piglet:jnt_l_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee/piglet:jnt_r_front_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Idle_002
+      takeName: Take 001
+      firstFrame: 155
+      lastFrame: 216
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: piglet:grp_ctrl
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee/piglet:ctrl_l_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee/piglet:ctrl_r_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03/piglet:ctrl_tail_04
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_l_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02/piglet:ctrl_noseEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_r_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03/piglet:ctrl_l_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03/piglet:ctrl_r_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee/piglet:ctrl_l_front_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee/piglet:ctrl_r_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee/piglet:jnt_l_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee/piglet:jnt_r_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03/piglet:jnt_tail_04
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02/piglet:jnt_noseEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03/piglet:jnt_l_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03/piglet:jnt_r_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee/piglet:jnt_l_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee/piglet:jnt_r_front_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Recoil
+      takeName: Take 001
+      firstFrame: 218
+      lastFrame: 244
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: piglet:grp_ctrl
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_l_back_hip/piglet:ctrl_l_back_knee/piglet:ctrl_l_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_r_back_hip/piglet:ctrl_r_back_knee/piglet:ctrl_r_back_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_back/piglet:ctrl_tail_01/piglet:ctrl_tail_02/piglet:ctrl_tail_03/piglet:ctrl_tail_04
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_l_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_nose_01/piglet:ctrl_nose_02/piglet:ctrl_noseEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_head_02/piglet:ctrl_r_eye
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_l_ear_01/piglet:ctrl_l_ear_02/piglet:ctrl_l_ear_03/piglet:ctrl_l_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_head_01/piglet:ctrl_r_ear_01/piglet:ctrl_r_ear_02/piglet:ctrl_r_ear_03/piglet:ctrl_r_earEnd
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_l_front_hip/piglet:ctrl_l_front_knee/piglet:ctrl_l_front_foot
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee
+        weight: 1
+      - path: piglet:grp_ctrl/piglet:ctrl_piglet/piglet:ctrl_main/piglet:ctrl_spine_front/piglet:ctrl_r_front_hip/piglet:ctrl_r_front_knee/piglet:ctrl_r_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_l_back_hip/piglet:jnt_l_back_knee/piglet:jnt_l_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_r_back_hip/piglet:jnt_r_back_knee/piglet:jnt_r_back_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_back/piglet:jnt_tail_01/piglet:jnt_tail_02/piglet:jnt_tail_03/piglet:jnt_tail_04
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_head_02/piglet:jnt_nose_01/piglet:jnt_nose_02/piglet:jnt_noseEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_ear_01/piglet:jnt_l_ear_02/piglet:jnt_l_ear_03/piglet:jnt_l_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_l_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_ear_01/piglet:jnt_r_ear_02/piglet:jnt_r_ear_03/piglet:jnt_r_earEnd
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_head_01/piglet:jnt_r_eye
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_l_front_hip/piglet:jnt_l_front_knee/piglet:jnt_l_front_foot
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee
+        weight: 1
+      - path: piglet:grp_skeleton/piglet:jnt_main/piglet:jnt_spine_front/piglet:jnt_r_front_hip/piglet:jnt_r_front_knee/piglet:jnt_r_front_foot
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
