@@ -4,19 +4,20 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour {
 
+    public Button button;
     public static UIManager instance = null;
 
-    Canvas canvas;
+    Canvas UI_canvas;
 
     void Start()
     {
-        canvas = GetComponent<Canvas>();
-        canvas.enabled = false;
+        UI_canvas = GetComponent<Canvas>();
+        UI_canvas.enabled = false;
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(button == true)
         {
             OpenMenu();
         }
@@ -24,13 +25,13 @@ public class UIManager : MonoBehaviour {
 
     public void OpenMenu()
     {
-        canvas.enabled = true;
+        UI_canvas.enabled = true;
         Time.timeScale = 0;
     }
 
     public void Resume()
     {
-        canvas.enabled = false;
+        UI_canvas.enabled = false;
         Time.timeScale = 1;
     }
 
@@ -41,7 +42,7 @@ public class UIManager : MonoBehaviour {
 
     public void Instructions()
     {
-        
+        Debug.Log("Instructions go here");
     }
 
     public void Quit()
