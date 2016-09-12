@@ -93,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 1000012244531478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: -2.93}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000013474900524}
@@ -323,13 +323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  isDead: 1
+  isDead: 0
   followPiggy: 0
-  aiRadius: 15
-  startSpeed: 5
-  slowDown: 2
-  heading: 0
-  directionChangeInterval: 1
+  startSpeed: 7.5
+  slowDown: 4.5
+  patrolDist: 0
 --- !u!114 &114000013912805880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bc4d9eea4bde342aeead13dbbeff96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  biteRange: 2
+  biteRange: 8
   timeBetweenBites: 1
   biteDamage: 25
 --- !u!135 &135000013973020910
