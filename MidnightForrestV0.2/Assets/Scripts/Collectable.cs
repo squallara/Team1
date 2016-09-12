@@ -5,6 +5,8 @@ public class Collectable : MonoBehaviour
 {
     public static Collectable collectCurrent;
 
+    public static Collectable collectCurrent;
+
     public GameObject playerAggro, playerSpotlight, prize;
     [HideInInspector]
     public int countPigglets = 0;
