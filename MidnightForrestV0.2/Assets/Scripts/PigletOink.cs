@@ -4,7 +4,7 @@ using System.Collections;
 
 public class PigletOink : MonoBehaviour {
 
-    public Transform player;
+    public GameObject player;
     public GameObject OinkText;
     public float speed;
     public float height;
@@ -23,9 +23,12 @@ public class PigletOink : MonoBehaviour {
 
     GameObject Oink;
 
+    void Awake() {
+        
+    }
     // Use this for initialization
     void Start() {
-
+        player = GameObject.FindGameObjectWithTag("Piggy");
     }
 
     // Update is called once per frame
