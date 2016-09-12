@@ -35,5 +35,6 @@ public class MonsterHealth : MonoBehaviour {
 		boxCollider.isTrigger = true;
 		GetComponent<NavMeshAgent> ().enabled = false;
 		Destroy(gameObject, 1f);
-	}
+        Handheld.Vibrate();
+    }
 }
