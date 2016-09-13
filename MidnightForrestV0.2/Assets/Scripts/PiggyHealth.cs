@@ -8,6 +8,7 @@ public class PiggyHealth : MonoBehaviour {
 	PiggyMovement piggyMovement;
 	//PiggyWeapon piggyWeapon;
 	bool isDead;
+	Animator anim;
 
     [HideInInspector]
     public static int piggHP = 4; //steps of pigg´s health before it dies ( created for the fading light mechanism)
@@ -19,11 +20,13 @@ public class PiggyHealth : MonoBehaviour {
 		piggyMovement = GetComponent<PiggyMovement> ();
 		//piggyWeapon = GetComponent<PiggyWeapon> ();
 		currentHealth = startingHealth; //initial full health
+		anim = GetComponent<Animator>();
 	}
 	public void TakeDamage(int amount){
 		currentHealth -= amount;
         piggHP--;
 		//light.intensity -= 0.01f * amount;
+		anim.SetTrigger ("Recoil");
 		if (currentHealth <= 0 && !isDead) {
 			Death (); //should die
 		}
@@ -31,6 +34,7 @@ public class PiggyHealth : MonoBehaviour {
 	void Death(){
 		isDead = true;
 		piggyMovement.enabled = false;
+		anim.SetTrigger ("Die");
 		//piggyWeapon.enabled = false; //turn of weapons and their effects
 		gameObject.SetActive(false); //hide the piggy or death animation for future!!
 		print ("you got eaten!!!");
@@ -42,4 +46,21 @@ public class PiggyHealth : MonoBehaviour {
 	//		Application.LoadLevel ("you win");
 	//	}
 	//}
+	public void StopRecoilEvent(){
+		anim.ResetTrigger ("Recoil");
+	}
+
+	void OnTriggerEnter(Collider hittingCollider){
+		print ("hit: "+ hittingCollider.tag);
+		if (hittingCollider.tag == "monster") {
+			Debug.Log ("EMERGING!!!!");
+			hittingCollider.gameObject.GetComponent<MonsterMovement> ().MonsterEmerge (true);
+		}
+	}
+
+	void OnTriggerExit(Collider hittingCollider){
+		if (hittingCollider.tag == "monster") {
+			hittingCollider.gameObject.GetComponent<MonsterMovement> ().MonsterEmerge (false);
+		}
+	}
 }

@@ -14,6 +14,7 @@ public class PolyCollider : MonoBehaviour
             //monsterHP = hittingCollider.GetComponent<MonsterHealth>();
             //monsterHP.TakeDamage();
             monsterMM = hittingCollider.GetComponent<MonsterMovement>();
+			Debug.Log ("light speed triggering");
             monsterMM.LightSpeed();
         }
     }

@@ -21,7 +21,9 @@ public class Collectable : MonoBehaviour {
             other.gameObject.SetActive(false);
             countPigglets++;
             Debug.Log("Collide");
-            transform.FindChild("GatheredPigglets" + countPigglets).gameObject.SetActive(true);
+			GameObject piglet = transform.FindChild ("GatheredPigglets" + countPigglets).gameObject;
+			piglet.SetActive(true);
+			AkSoundEngine.PostEvent ("Piglet_Pickup", piglet);
             PigletCollectTexture.pigletCollectCurrent.pigCanvas.gameObject.SetActive(true);
             PigletCollectTexture.pigletCollectCurrent.updateText();
             StartCoroutine(Disappearcanvas());
