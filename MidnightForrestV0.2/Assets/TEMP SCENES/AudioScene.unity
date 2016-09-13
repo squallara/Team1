@@ -18014,6 +18014,8 @@ MonoBehaviour:
   playerAggro: {fileID: 683873714}
   playerSpotlight: {fileID: 530389817}
   prize: {fileID: 1000012202036772, guid: 83bb99c4ab0c46f49af44fdf55b266cf, type: 2}
+  countPigglets: 0
+  timeForCanvas: 0
 --- !u!114 &806898926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18026,6 +18028,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
+--- !u!95 &806898927
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806898919}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &807466028
 GameObject:
   m_ObjectHideFlags: 0
@@ -20834,34 +20853,24 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 933377252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 773bf24f564b0c34d845cfb8dc6d7875, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleport:
-  - {fileID: 109428577}
-  - {fileID: 1851757342}
-  - {fileID: 478051202}
-  - {fileID: 77558674}
-  - {fileID: 1141736025}
-  - {fileID: 361845136}
-  - {fileID: 796320243}
-  - {fileID: 155792228}
-  - {fileID: 661574778}
-  - {fileID: 2080921528}
   prefeb:
   - {fileID: 1000012202036772, guid: 83bb99c4ab0c46f49af44fdf55b266cf, type: 2}
   - {fileID: 1000012202036772, guid: 83bb99c4ab0c46f49af44fdf55b266cf, type: 2}
   - {fileID: 1000012202036772, guid: 83bb99c4ab0c46f49af44fdf55b266cf, type: 2}
   - {fileID: 1000012202036772, guid: 83bb99c4ab0c46f49af44fdf55b266cf, type: 2}
+  teleporting: []
 --- !u!114 &933377254
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 933377252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 056bb0d5a916d9341ba967278e20cc34, type: 3}
   m_Name: 

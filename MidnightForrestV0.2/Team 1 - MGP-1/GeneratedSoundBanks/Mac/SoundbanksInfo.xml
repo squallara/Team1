@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Team1\MidnightForrestV0.2\Team 1 - MGP-1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Team1\MidnightForrestV0.2\Team 1 - MGP-1\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Team1\MidnightForrestV0.2\Team 1 - MGP-1\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Team1\MidnightForrestV0.2\Team 1 - MGP-1\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -108,7 +108,7 @@
 				</File>
 				<File Id="207011237" Language="SFX">
 					<ShortName>Pig_Scream.wav</ShortName>
-					<Path>SFX\Pig_Scream_28654EFA.wem</Path>
+					<Path>SFX\Pig_Scream_540450A2.wem</Path>
 				</File>
 				<File Id="228545082" Language="SFX">
 					<ShortName>Bat Screams_3.wav</ShortName>
@@ -212,11 +212,11 @@
 				</File>
 				<File Id="730696418" Language="SFX">
 					<ShortName>Pig_Scream_1.wav</ShortName>
-					<Path>SFX\Pig_Scream_1_0FBCA0BF.wem</Path>
+					<Path>SFX\Pig_Scream_1_3B23204B.wem</Path>
 				</File>
 				<File Id="768912947" Language="SFX">
 					<ShortName>Pig_Scream_3.wav</ShortName>
-					<Path>SFX\Pig_Scream_3_5F13F7A3.wem</Path>
+					<Path>SFX\Pig_Scream_3_B51350FD.wem</Path>
 				</File>
 				<File Id="773835123" Language="SFX">
 					<ShortName>Drip_4.wav</ShortName>
@@ -264,7 +264,7 @@
 				</File>
 				<File Id="994670908" Language="SFX">
 					<ShortName>Pig_Scream_2.wav</ShortName>
-					<Path>SFX\Pig_Scream_2_D66C4C4B.wem</Path>
+					<Path>SFX\Pig_Scream_2_011837EE.wem</Path>
 				</File>
 				<File Id="1011996570" Language="SFX">
 					<ShortName>Worm Attack_6.wav</ShortName>

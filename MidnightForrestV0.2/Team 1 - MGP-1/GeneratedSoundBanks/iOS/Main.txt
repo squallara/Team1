@@ -11,6 +11,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3181627793	Piglet_Pickup			\Default Work Unit\Piglet_Pickup	
 	3831645642	Worm_Swim_Stop			\Default Work Unit\Worm_Swim_Stop	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4004801580	Piglet_Scream_Distance			\Default Work Unit\Piglet_Scream_Distance	
+
 Effect plug-ins	ID	Name	Type				Notes
 	702543456	Tunnel1	Wwise Matrix Reverb			
 
@@ -33,7 +36,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	164528855	Worm Disappear_5	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Worm Disappear_5_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Worm_Disappear\Worm Disappear_5		191552
 	169879184	Drip_12	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_12_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_12		30400
 	204815079	Pig Swim_8	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig Swim_8_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Swim\Pig Swim_8		257156
-	207011237	Pig_Scream	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_28654EFA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream		47664
+	207011237	Pig_Scream	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_540450A2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream		47664
 	228545082	Bat Screams_3	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Bat Screams_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bat_Screams\Bat Screams_3		454778
 	233652331	Drip_16	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_16_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_16		34304
 	253011877	Bat Screams_4	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Bat Screams_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bat_Screams\Bat Screams_4		383266
@@ -59,8 +62,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	634330294	Pig_Scream	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Scream\Pig_Scream		174144
 	650715191	Pig_Happy_1	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Happy_1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Happy\Pig_Happy_1		59968
 	660614130	Drip_2	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_2		11708
-	730696418	Pig_Scream_1	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_1_0FBCA0BF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_1		40864
-	768912947	Pig_Scream_3	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_3_5F13F7A3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_3		34166
+	730696418	Pig_Scream_1	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_1_3B23204B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_1		40864
+	768912947	Pig_Scream_3	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_3_B51350FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_3		34166
 	773835123	Drip_4	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_4		8448
 	815602960	Drip_6	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_6		9616
 	858874920	Drip_3	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_3		26514
@@ -72,7 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	961738203	Bat Screams_10	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Bat Screams_10_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bat_Screams\Bat Screams_10		495258
 	974008332	Pig Swim	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig Swim_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Swim\Pig Swim		203188
 	986183633	Worm Attack_9	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Worm Attack_9_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Worm_Attack\Worm Attack_9		270912
-	994670908	Pig_Scream_2	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_2_D66C4C4B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_2		35110
+	994670908	Pig_Scream_2	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Pig_Scream_2_011837EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pig_Damaged\Pig_Scream_2		35110
 	1011996570	Worm Attack_6	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Worm Attack_6_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Worm_Attack\Worm Attack_6		250944
 	1025083526	Drip_9	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_9_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_9		17920
 	1026328020	Drip_13	C:\Users\dadiu\Documents\WwiseProjects\Team 1 - MGP-1\.cache\iOS\SFX\Drip_13_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiance_Drips\Drip_13		30912

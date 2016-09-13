@@ -206,8 +206,8 @@ MonoBehaviour:
       Guid: de78274093c20a47b8bbb9f3c270cca3
   ExpandedItems:
   - /Team 1 - MGP-1
-  - /Team 1 - MGP-1/Events
-  - /Team 1 - MGP-1/Events/Default Work Unit
+  - /Team 1 - MGP-1/SoundBanks
+  - /Team 1 - MGP-1/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
