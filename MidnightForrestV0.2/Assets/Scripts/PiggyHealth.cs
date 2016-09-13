@@ -23,7 +23,7 @@ public class PiggyHealth : MonoBehaviour {
 	public void TakeDamage(int amount){
 		currentHealth -= amount;
         piggHP--;
-		light.intensity -= 0.01f * amount;
+		//light.intensity -= 0.01f * amount;
 		if (currentHealth <= 0 && !isDead) {
 			Death (); //should die
 		}
