@@ -21,10 +21,13 @@ public class TouchInput : MonoBehaviour
     Quaternion lookRotation; // A variable to rotate to what we want to look at
     Vector3 direction; // A variable to know the direction we look at
 
+	Animator anim;	 // for animation
+
     void Start()
     {
 
         rBody = GetComponent<Rigidbody>();
+		anim = GetComponent<Animator> ();
     }
 
     void Update()
@@ -66,21 +69,22 @@ public class TouchInput : MonoBehaviour
     // Use fixedupdate for physics
     void FixedUpdate()
     {
-        rBody.AddForce(new Vector3(0f, 0f, 0.01f));
+        //rBody.AddForce(new Vector3(0f, 0f, 0.01f));
 
-        if (checkCanMove(counter))
-        {
-            if (coll.Raycast(ray, out hit, Mathf.Infinity) && sphereRadius(transform.position, hit.point, rotateRadius))
-            {
-                rotateChar();
-                rBody.AddRelativeForce(Vector3.forward * acceleration);
-            }
-            else
-            {
-                rotateChar();
-            }
 
-        }
+		// if you go through this then character is moving
+		if (checkCanMove (counter)) {
+			if (coll.Raycast (ray, out hit, Mathf.Infinity) && sphereRadius (transform.position, hit.point, rotateRadius)) {
+				rotateChar ();
+				rBody.AddRelativeForce (Vector3.forward * acceleration);
+			} else {
+				rotateChar ();
+			}
+
+			Animating (true); // pig swimming animation
+		} else {
+			Animating (false); // pig idle animation
+		}
 
         if (rBody.velocity.magnitude > playerSpeed)
         {
@@ -115,5 +119,11 @@ public class TouchInput : MonoBehaviour
         }
         else return true;
     }
+
+	private void Animating(bool swimming){
+		// tell the animator that the pig is swim
+		anim.SetBool ("IsSwimming", swimming);
+	}
+
 
 }

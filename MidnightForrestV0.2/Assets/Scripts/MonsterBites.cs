@@ -44,7 +44,7 @@ public class MonsterBites : MonoBehaviour {
 	}
 	void Bite(){
         timer = 0f;
-		//anim.SetBool("Attacked", true);
+		anim.SetBool("Attacked", true);
 		if (piggyHealth.currentHealth > 0) {
 			piggyHealth.TakeDamage (biteDamage);
             Debug.Log("BITE!");
@@ -54,7 +54,7 @@ public class MonsterBites : MonoBehaviour {
 	}
 
 	public void StopAttackEvent(){
-		//anim.SetBool("Attacked", false);
+		anim.SetBool("Attacked", false);
 		Debug.Log ("stopping attack143564768");
 	}
 

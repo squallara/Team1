@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class MonsterMovement : MonoBehaviour
-{
+
+public class MonsterMovement2 : MonoBehaviour {
+
     public Transform target; //what to follow (piggy)
 
     private NavMeshAgent nav;
@@ -13,7 +14,7 @@ public class MonsterMovement : MonoBehaviour
 
     public float startSpeed = 5.0f; //Monster speed
     public float slowDown; //Speed decrease
-    public float patrolDist;
+    public float patrolDist = 1f; // How close to their target should they be before getting a new target?
 
     void Awake()
     {
@@ -38,6 +39,16 @@ public class MonsterMovement : MonoBehaviour
             }
         }
     }
+    //dies when hit by the light
+    void OnColliderEnter(Collision col)
+    {
+        if (col.gameObject.name == "piggyLight")
+        {
+            Destroy(gameObject);
+            MonsterManager.monstersAlive -= 1;
+            Debug.Log("Sea monster killed");
+        }
+    }
 
     void OnTriggerEnter(Collider aggro)
     {
@@ -57,24 +68,16 @@ public class MonsterMovement : MonoBehaviour
 
     public void LightSpeed()
     {
-        nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
-        DamagingParticles.damageCurrent.StartParticles();
-        Debug.Log(nav.speed);
-        if (nav.speed <= 0 && isDead == false)
+        nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); // Reduces speed when light hits based on slowDown
+        if (nav.speed == 0f && isDead == false)
         {
-            Debug.Log("Test");
-            //Death();
+            Death();
         }
-    }
-
-    public void RegainSpeed()
-    {
-        nav.speed = startSpeed;
     }
 
     void Death()
     {
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
         isDead = true;
         followPiggy = false;
         boxCollider.isTrigger = true;

@@ -2322,7 +2322,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
 --- !u!1 &361845135
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,7 +2732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000012930066776, guid: c15a6b576873b064c86abeaaeb632d6e, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c15a6b576873b064c86abeaaeb632d6e, type: 2}
@@ -2872,7 +2872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011534676870, guid: da89959f311002943b0eb3681f3b767b, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da89959f311002943b0eb3681f3b767b, type: 2}
@@ -2947,7 +2947,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
 --- !u!4 &527754427 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012275045274, guid: 58a45853d28da734f9c9041728862e81,
@@ -3095,7 +3095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000011156681366, guid: 6eff157ba36cebc42933f55af0b36ecc, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 223000013222991830, guid: 6eff157ba36cebc42933f55af0b36ecc,
         type: 2}
@@ -3199,7 +3199,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000012172856218, guid: 6eff157ba36cebc42933f55af0b36ecc, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6eff157ba36cebc42933f55af0b36ecc, type: 2}
@@ -3327,7 +3327,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
 --- !u!1 &784823413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,7 +3391,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!45 &784823416
 Skybox:
   m_ObjectHideFlags: 0
@@ -3635,7 +3635,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
 --- !u!45 &801434018
 Skybox:
   m_ObjectHideFlags: 0
@@ -4037,7 +4037,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!114 &933377256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4199,7 +4199,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
 --- !u!1 &1140422070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,7 +4940,7 @@ Transform:
   - {fileID: 587024263}
   - {fileID: 1914890832}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &1643647171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5075,7 +5075,7 @@ Transform:
   m_Children:
   - {fileID: 1140422071}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
 --- !u!1 &1730887100
 GameObject:
   m_ObjectHideFlags: 0
@@ -5146,7 +5146,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!1 &1845209388
 GameObject:
   m_ObjectHideFlags: 0
@@ -5225,7 +5225,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!1 &1851757341
 GameObject:
   m_ObjectHideFlags: 0
@@ -5439,7 +5439,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
 --- !u!1 &2080921527
 GameObject:
   m_ObjectHideFlags: 0
