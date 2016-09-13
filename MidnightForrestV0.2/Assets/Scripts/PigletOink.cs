@@ -19,6 +19,8 @@ public class PigletOink : MonoBehaviour {
     private bool isHit = false;
     public float radius;
     float step;
+    float scaleSound = 0f;
+    float tempScaleSound = 0f;
     bool isMoving = true;
     float distanceFromStart;
     float previousDist;

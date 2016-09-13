@@ -2267,8 +2267,9 @@ MonoBehaviour:
   height: 0
   minimumScale: 1
   maximumScale: 2
-  distanceScale: 200
-  radius: 3
+  distanceScale: 150
+  acceleration: 150
+  radius: 17
   setStartScale: {x: 1, y: 1, z: 1}
 --- !u!136 &136000014285821596
 CapsuleCollider:
