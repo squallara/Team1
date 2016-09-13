@@ -12,6 +12,7 @@ TagManager:
   - Piglet
   - Oink
   - OinkTarget
+  - ripples
   layers:
   - Default
   - TransparentFX

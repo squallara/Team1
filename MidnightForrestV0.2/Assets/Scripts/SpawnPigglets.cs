@@ -15,9 +15,10 @@ public class SpawnPigglets : MonoBehaviour {
         for (int i = 0; i < 3; i++)
         {
             int tele_num = Random.Range(0, teleporting.Count);
-            Instantiate(prefeb[i], teleporting[tele_num].position + new Vector3(0, prefeb[i].GetComponent<MeshRenderer>().bounds.extents.y, 0), teleporting[tele_num].rotation);
-
+            //Instantiate(prefeb[i], teleporting[tele_num].position + new Vector3(0, prefeb[i].GetComponent<MeshRenderer>().bounds.extents.y, 0), teleporting[tele_num].rotation);
+			Instantiate(prefeb[i], teleporting[tele_num].position + new Vector3(0, prefeb[i].transform.position.y, 0), teleporting[tele_num].rotation);
             teleporting.Remove(teleporting[tele_num]);
+
         }
 
     }

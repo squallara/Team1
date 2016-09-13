@@ -13,17 +13,18 @@ public class Collectable : MonoBehaviour {
 
     void Start() {
         collectCurrent = this;
+
     }
 
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Prize")) {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
             countPigglets++;
             Debug.Log("Collide");
-			GameObject piglet = transform.FindChild ("GatheredPigglets" + countPigglets).gameObject;
-			piglet.SetActive(true);
-			AkSoundEngine.PostEvent ("Piglet_Pickup", piglet);
+			GameObject placeOnPig = transform.FindChild ("GatheredPigglets" + countPigglets).gameObject;
+			other.gameObject.GetComponent<PiggletMovement> ().JumpOnPiggy(placeOnPig);
+			//piglet.SetActive(true);
             PigletCollectTexture.pigletCollectCurrent.pigCanvas.gameObject.SetActive(true);
             PigletCollectTexture.pigletCollectCurrent.updateText();
             StartCoroutine(Disappearcanvas());

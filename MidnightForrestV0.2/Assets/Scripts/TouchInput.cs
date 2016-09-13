@@ -140,6 +140,7 @@ public class TouchInput : MonoBehaviour {
 		}
         // tell the animator that the pig is swim
         anim.SetBool("IsSwimming", swimming);
+		rippleAnim.SetBool ("IsSwimRipple", swimming);
     }
 
 

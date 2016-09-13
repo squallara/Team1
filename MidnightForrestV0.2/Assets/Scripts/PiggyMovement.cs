@@ -9,6 +9,7 @@ public class PiggyMovement : MonoBehaviour {
 	public float speed = 6f;
 	Vector3 movement; //direction of movement
 	Animator anim;	// animator component
+	Animator rippleAnim;	// animator component
 	Rigidbody piggyRB;
 	int floorMask; //casting rays only on floor laayer
 	float camRayLength = 100f;
@@ -19,7 +20,7 @@ public class PiggyMovement : MonoBehaviour {
 		floorMask = LayerMask.GetMask ("Floor");
 		piggyRB = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
-
+		rippleAnim = GameObject.FindGameObjectWithTag ("ripples").GetComponent<Animator> ();
 	}
 
 
@@ -71,6 +72,7 @@ public class PiggyMovement : MonoBehaviour {
 
 		// tell the animator that the pig is swim
 		anim.SetBool ("IsSwimming", swimming);
+		rippleAnim.SetBool ("IsSwimRipple", swimming);
 	}
 
 	/*void OnCollisionEnter (Collision col){
