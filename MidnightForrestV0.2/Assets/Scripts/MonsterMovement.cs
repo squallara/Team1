@@ -15,12 +15,15 @@ public class MonsterMovement : MonoBehaviour
     public float slowDown; //Speed decrease
     public float patrolDist;
 
+	Animator wormAnim;
+
     void Awake()
     {
         boxCollider = GetComponent<BoxCollider>();
         nav = GetComponent<NavMeshAgent>();
         nav.speed = startSpeed;
         target = GameObject.FindGameObjectWithTag("Piggy").transform;
+		wormAnim = GetComponent<Animator> ();
         Patrol();
     }
     void Update()
@@ -58,11 +61,13 @@ public class MonsterMovement : MonoBehaviour
     public void LightSpeed()
     {
         nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
-        DamagingParticles.damageCurrent.StartParticles();
+        //DamagingParticles.damageCurrent.StartParticles();
         Debug.Log(nav.speed);
+		Debug.Log ("Slowing down");
         if (nav.speed <= 0 && isDead == false)
         {
             Debug.Log("Test");
+			wormAnim.SetBool ("WormRecoil", true);
             //Death();
         }
     }
@@ -72,7 +77,7 @@ public class MonsterMovement : MonoBehaviour
         nav.speed = startSpeed;
     }
 
-    void Death()
+	void WormDeathEvent()
     {
         Destroy(gameObject);
         isDead = true;
@@ -80,9 +85,19 @@ public class MonsterMovement : MonoBehaviour
         boxCollider.isTrigger = true;
         GetComponent<NavMeshAgent>().enabled = false;
         MonsterManager.monstersAlive -= 1;
+		Handheld.Vibrate ();
     }
+
     void Patrol()
     {
         nav.destination = WaitPoints.patrolPoint[Random.Range(0, WaitPoints.patrolPoint.Length)].position; //Selects a random Transform from WaitPoints.patrol and sets it as destination
     }
+		
+	public void MonsterEmerge(bool closeToPiggy){
+		if (closeToPiggy == true) {
+			wormAnim.SetBool ("WormEmerge", true);
+		} else {
+			wormAnim.SetBool ("WormEmerge", false);
+		}
+	}
 }
