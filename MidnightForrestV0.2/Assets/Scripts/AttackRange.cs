@@ -6,19 +6,23 @@ public class AttackRange : MonoBehaviour {
     MonsterMovement movement;
     MonsterBites bites;
 
+    Animator anim;
+
     float timer=0;
     public float timeBeforeAttack = 2f;
 
     void Start()
     {
-        movement = GetComponent<MonsterMovement>();
-        bites = GetComponent<MonsterBites>();
+        movement = GetComponentInParent<MonsterMovement>();
+        bites = GetComponentInParent<MonsterBites>();
+        anim = GetComponentInParent<Animator>();
     }
 
 	void OnTriggerStay(Collider col)
     {
         if(col.tag == "Piggy")
         {
+            
             timer += Time.deltaTime;
             if(timer > timeBeforeAttack)
             {
@@ -29,11 +33,12 @@ public class AttackRange : MonoBehaviour {
 
     IEnumerator PreventMoving(float delay)
     {
+        print("hit piggy");
         movement.isAttacking = true;
-        bites.Bite();
+        AkSoundEngine.PostEvent("Worm_Attack", gameObject);
+        anim.SetBool("WormAttack", true);
         timer = 0;
         yield return new WaitForSeconds(delay);
-        bites.StopAttackEvent();
         movement.isAttacking = false;
     }
 }

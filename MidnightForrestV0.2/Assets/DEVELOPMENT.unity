@@ -2400,9 +2400,9 @@ MonoBehaviour:
   piggy: {fileID: 1305534699}
   maxMonstersAlive: 20
   monsterType:
-  - {fileID: 1000010496781912, guid: 647560c9d072a474db7c260189c1a48f, type: 2}
-  - {fileID: 1000010496781912, guid: 647560c9d072a474db7c260189c1a48f, type: 2}
-  - {fileID: 1000010496781912, guid: 647560c9d072a474db7c260189c1a48f, type: 2}
+  - {fileID: 1000010496781912, guid: 0f90ac7b9bb438b4db892e33d5ca7724, type: 2}
+  - {fileID: 1000010496781912, guid: 0f90ac7b9bb438b4db892e33d5ca7724, type: 2}
+  - {fileID: 1000010496781912, guid: 0f90ac7b9bb438b4db892e33d5ca7724, type: 2}
   spawnTime: 3
   spawnPoints:
   - {fileID: 430850993}
@@ -2617,27 +2617,27 @@ Prefab:
     - target: {fileID: 224000012221404660, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 200.97195
+      value: 197.81818
       objectReference: {fileID: 0}
     - target: {fileID: 224000010106453528, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 502.4299
+      value: 506.18182
       objectReference: {fileID: 0}
     - target: {fileID: 224000011032700834, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 376.82242
+      value: 384
       objectReference: {fileID: 0}
     - target: {fileID: 224000011016499122, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 208.14952
+      value: 209.45454
       objectReference: {fileID: 0}
     - target: {fileID: 224000010655707878, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 699.81305
+      value: 698.1818
       objectReference: {fileID: 0}
     - target: {fileID: 111000011879581858, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
@@ -2842,8 +2842,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019270853}
-  m_LocalRotation: {x: -0.09762702, y: 0.023288941, z: 0.0022851373, w: 0.99494797}
-  m_LocalPosition: {x: 537.0398, y: -430.0931, z: -799.43195}
+  m_LocalRotation: {x: -0.2988363, y: 0.6408564, z: 0.2988363, w: 0.6408564}
+  m_LocalPosition: {x: -15, y: -27.86, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -3536,7 +3536,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
-  light: {fileID: 265393565}
+  spotLight: {fileID: 0}
+  pointLight: {fileID: 0}
+  normalizedHealthAmount: 0
+  startingIntensity: 7
 --- !u!64 &1305534707
 MeshCollider:
   m_ObjectHideFlags: 0
