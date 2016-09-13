@@ -469,53 +469,53 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: WormMonster_v1:grp_joints
+      - path: WormMonster:grp_joints
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013/WormMonster_v1:jt_bnd_spine_014
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013/WormMonster_v1:jt_bnd_spine_014/WormMonster_v1:jt_bnd_spine_015
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013/WormMonster_v1:jt_bnd_spine_014/WormMonster_v1:jt_bnd_spine_015/WormMonster_v1:jt_bnd_spine_016
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013/WormMonster_v1:jt_bnd_spine_014/WormMonster_v1:jt_bnd_spine_015/WormMonster_v1:jt_bnd_spine_016/WormMonster_v1:jt_bnd_spine_017
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016/WormMonster:jt_bnd_spine_017
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_bnd_spine_01/WormMonster_v1:jt_bnd_spine_02/WormMonster_v1:jt_bnd_spine_03/WormMonster_v1:jt_bnd_spine_04/WormMonster_v1:jt_bnd_spine_05/WormMonster_v1:jt_bnd_spine_06/WormMonster_v1:jt_bnd_spine_07/WormMonster_v1:jt_bnd_spine_08/WormMonster_v1:jt_bnd_spine_09/WormMonster_v1:jt_bnd_spine_010/WormMonster_v1:jt_bnd_spine_011/WormMonster_v1:jt_bnd_spine_012/WormMonster_v1:jt_bnd_spine_013/WormMonster_v1:jt_bnd_spine_014/WormMonster_v1:jt_bnd_spine_015/WormMonster_v1:jt_bnd_spine_016/WormMonster_v1:jt_bnd_spine_017/WormMonster_v1:jt_bnd_spine_018
+      - path: WormMonster:grp_joints/WormMonster:jt_bnd_spine_01/WormMonster:jt_bnd_spine_02/WormMonster:jt_bnd_spine_03/WormMonster:jt_bnd_spine_04/WormMonster:jt_bnd_spine_05/WormMonster:jt_bnd_spine_06/WormMonster:jt_bnd_spine_07/WormMonster:jt_bnd_spine_08/WormMonster:jt_bnd_spine_09/WormMonster:jt_bnd_spine_010/WormMonster:jt_bnd_spine_011/WormMonster:jt_bnd_spine_012/WormMonster:jt_bnd_spine_013/WormMonster:jt_bnd_spine_014/WormMonster:jt_bnd_spine_015/WormMonster:jt_bnd_spine_016/WormMonster:jt_bnd_spine_017/WormMonster:jt_bnd_spine_018
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_neck_01
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_neck_01/WormMonster_v1:jt_bnd_jawLower_01
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_bnd_jawLower_01
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_neck_01/WormMonster_v1:jt_bnd_jawLower_01/WormMonster_v1:jt_jawLower_end
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_bnd_jawLower_01/WormMonster:jt_jawLower_end
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_neck_01/WormMonster_v1:jt_jawUpper_start
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_jawUpper_start
         weight: 1
-      - path: WormMonster_v1:grp_joints/WormMonster_v1:jt_neck_01/WormMonster_v1:jt_jawUpper_start/WormMonster_v1:jt_bnd_jawUpper_01
+      - path: WormMonster:grp_joints/WormMonster:jt_neck_01/WormMonster:jt_jawUpper_start/WormMonster:jt_bnd_jawUpper_01
         weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
