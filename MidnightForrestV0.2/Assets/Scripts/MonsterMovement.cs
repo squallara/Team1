@@ -57,12 +57,13 @@ public class MonsterMovement : MonoBehaviour
 
     public void LightSpeed()
     {
-        nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed);
+        nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
+        DamagingParticles.damageCurrent.StartParticles();
         Debug.Log(nav.speed);
         if (nav.speed <= 0 && isDead == false)
         {
             Debug.Log("Test");
-            Death();
+            //Death();
         }
     }
 

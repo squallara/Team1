@@ -8,13 +8,21 @@ public class PiggyMovement : MonoBehaviour {
 
 	public float speed = 6f;
 	Vector3 movement; //direction of movement
+	Animator anim;	// animator component
 	Rigidbody piggyRB;
 	int floorMask; //casting rays only on floor laayer
 	float camRayLength = 100f;
+
+
 	void Awake(){
+		
 		floorMask = LayerMask.GetMask ("Floor");
 		piggyRB = GetComponent<Rigidbody> ();
+		anim = GetComponent<Animator> ();
+
 	}
+
+
 	void FixedUpdate(){
 		//move and turn piggy towards mouse
 		float h = Input.GetAxisRaw ("Horizontal");
@@ -28,13 +36,16 @@ public class PiggyMovement : MonoBehaviour {
 		}*/
 		Move(h, v);
 		Turning ();
+		Animating (h, v);
 	}
+
 	private void Move(float h, float v){
 		movement.Set (h, 0f, v); //movement vector direction
 		movement = Camera.main.transform.TransformDirection(movement);
 		movement = movement.normalized * speed * Time.deltaTime; //how much should move
 		piggyRB.MovePosition(transform.position + movement); //move to new position
 	}
+
 	private void Turning(){
 		Ray camRay = Camera.main.ScreenPointToRay (Input.mousePosition); //cast ray
 		RaycastHit floorHit;
@@ -44,6 +55,15 @@ public class PiggyMovement : MonoBehaviour {
 			Quaternion newRotation = Quaternion.LookRotation(piggyToMouse);
 			piggyRB.MoveRotation (newRotation); //rotate piggy
 		}
+	}
+
+	private void Animating(float h, float v){
+
+		// if moved around any of the axes then the pig swims
+		bool swimming = h != 0f || v != 0f; 
+
+		// tell the animator that the pig is swim
+		anim.SetBool ("IsSwimming", swimming);
 	}
 
 	/*void OnCollisionEnter (Collision col){

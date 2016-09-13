@@ -9,6 +9,6 @@ public class Piglets : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        piggies.text = string.Format("{0:0}/{1:0}",2/*Collectable.collectCurrent.countPigglets*/, 4);
+        piggies.text = string.Format("{0:0}/{1:0}",Collectable.collectCurrent.countPigglets, 4);
 	}
 }

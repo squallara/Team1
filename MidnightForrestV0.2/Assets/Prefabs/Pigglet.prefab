@@ -23,7 +23,7 @@ GameObject:
   - 136: {fileID: 136000011908952982}
   - 23: {fileID: 23000010001915020}
   - 114: {fileID: 114000013108794850}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Pigglet
   m_TagString: Prize
   m_Icon: {fileID: 0}

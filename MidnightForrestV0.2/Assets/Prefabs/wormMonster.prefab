@@ -104,7 +104,7 @@ GameObject:
   - 114: {fileID: 114000010914725950}
   m_Layer: 0
   m_Name: wormMonster
-  m_TagString: Untagged
+  m_TagString: monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1440,8 +1440,8 @@ MonoBehaviour:
   target: {fileID: 0}
   isDead: 0
   followPiggy: 0
-  startSpeed: 5
-  slowDown: 2
+  startSpeed: 15
+  slowDown: 6
   patrolDist: 0
 --- !u!114 &114000013910452022
 MonoBehaviour:
@@ -1455,7 +1455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   biteRange: 2
-  timeBetweenBites: 1
+  timeBetweenBites: 2
   biteDamage: 25
 --- !u!135 &135000013896448154
 SphereCollider:
