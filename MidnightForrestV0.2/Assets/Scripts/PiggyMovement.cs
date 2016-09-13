@@ -62,6 +62,13 @@ public class PiggyMovement : MonoBehaviour {
 		// if moved around any of the axes then the pig swims
 		bool swimming = h != 0f || v != 0f; 
 
+		if (anim.GetBool ("IsSwimming") != swimming) {
+			if (swimming == true)
+				AkSoundEngine.PostEvent ("Pig_Swim", gameObject);
+			else
+				AkSoundEngine.PostEvent ("Pig_Swim_Stop", gameObject);
+		}
+
 		// tell the animator that the pig is swim
 		anim.SetBool ("IsSwimming", swimming);
 	}

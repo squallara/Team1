@@ -19,7 +19,7 @@ public class MonsterBites : MonoBehaviour {
 		if(piggy != null)
 			piggyHealth = piggy.GetComponent<PiggyHealth> ();
 		//monsterHealth = GetComponent<MonsterHealth> ();
-		//anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();
 	}
 	//void OnTriggerEnter(Collider hittingCollider){
 	//	if (hittingCollider.gameObject == piggy) { //is it piggy hitting
@@ -44,7 +44,7 @@ public class MonsterBites : MonoBehaviour {
 	}
 	void Bite(){
         timer = 0f;
-		//anim.SetBool("Attacked", true);
+		anim.SetBool("WormAttack", true);
 		if (piggyHealth.currentHealth > 0) {
 			piggyHealth.TakeDamage (biteDamage);
             Debug.Log("BITE!");
@@ -54,8 +54,7 @@ public class MonsterBites : MonoBehaviour {
 	}
 
 	public void StopAttackEvent(){
-		//anim.SetBool("Attacked", false);
-		Debug.Log ("stopping attack143564768");
+		anim.SetBool("WormAttack", false);
 	}
 
     IEnumerator FadingLights()

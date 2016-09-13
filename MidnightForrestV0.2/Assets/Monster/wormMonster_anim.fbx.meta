@@ -270,7 +270,7 @@ ModelImporter:
       curves: []
       events:
       - time: 1
-        functionName: DeathEvent
+        functionName: WormDeathEvent
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: ef0582daaf4c24e44ab313818cbc6540,
           type: 3}

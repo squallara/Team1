@@ -131,6 +131,13 @@ public class TouchInput : MonoBehaviour {
     }
 
     private void Animating(bool swimming) {
+		
+		if (anim.GetBool ("IsSwimming") != swimming) {
+			if (swimming == true)
+				AkSoundEngine.PostEvent ("Pig_Swim", gameObject);
+			else
+				AkSoundEngine.PostEvent ("Pig_Swim_Stop", gameObject);
+		}
         // tell the animator that the pig is swim
         anim.SetBool("IsSwimming", swimming);
     }
