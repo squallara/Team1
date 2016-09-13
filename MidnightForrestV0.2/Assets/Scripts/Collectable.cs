@@ -19,6 +19,7 @@ public class Collectable : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Prize")) {
+			other.gameObject.tag = "Untagged";
             //other.gameObject.SetActive(false);
             countPigglets++;
             Debug.Log("Collide");

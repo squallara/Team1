@@ -25,11 +25,13 @@ public class TouchInput : MonoBehaviour {
     Vector3 direction; // A variable to know the direction we look at
 
     Animator anim;	 // for animation
+	Animator rippleAnim;	// animator component
 
     void Start() {
 
         rBody = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+		rippleAnim = GameObject.FindGameObjectWithTag ("ripples").GetComponent<Animator> ();
     }
 
     // Use fixedupdate for physics
