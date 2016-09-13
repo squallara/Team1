@@ -19,7 +19,7 @@ public class MonsterBites : MonoBehaviour {
 		if(piggy != null)
 			piggyHealth = piggy.GetComponent<PiggyHealth> ();
 		//monsterHealth = GetComponent<MonsterHealth> ();
-		//anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> ();
 	}
 	//void OnTriggerEnter(Collider hittingCollider){
 	//	if (hittingCollider.gameObject == piggy) { //is it piggy hitting
