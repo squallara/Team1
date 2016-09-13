@@ -95,10 +95,11 @@ MonoBehaviour:
   speed: 15
   distanceSpeedfactor: 10
   height: 0
-  minimumScale: 0.5
-  maximumScale: 1
-  distanceScale: 120
-  radius: 2
+  minimumScale: 1
+  maximumScale: 2
+  distanceScale: 200
+  radius: 3
+  setStartScale: {x: 1, y: 1, z: 1}
 --- !u!136 &136000011908952982
 CapsuleCollider:
   m_ObjectHideFlags: 1

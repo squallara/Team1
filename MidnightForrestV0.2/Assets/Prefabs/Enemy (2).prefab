@@ -78,6 +78,7 @@ GameObject:
   - 195: {fileID: 195000010958162958}
   - 114: {fileID: 114000010506126102}
   - 114: {fileID: 114000011567082088}
+  - 95: {fileID: 95000013022414128}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: monster
@@ -311,6 +312,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &95000013022414128
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013740247416}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114000010506126102
 MonoBehaviour:
   m_ObjectHideFlags: 1
