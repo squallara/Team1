@@ -23,6 +23,9 @@ GameObject:
   - 136: {fileID: 136000011908952982}
   - 23: {fileID: 23000010001915020}
   - 114: {fileID: 114000013108794850}
+  - 54: {fileID: 54000011479465870}
+  - 114: {fileID: 114000012339700308}
+  - 114: {fileID: 114000010225031886}
   m_Layer: 10
   m_Name: Pigglet
   m_TagString: Prize
@@ -79,6 +82,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012202036772}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54000011479465870
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012202036772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &114000010225031886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012202036772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7524dd884d8d74542a67c7fd4e8ed268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+--- !u!114 &114000012339700308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012202036772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9b984371a90c14090da83ea236820d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 5696eb70bbe65541a11f0ba89977bfad
+  eventID: -1850474830
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
 --- !u!114 &114000013108794850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,8 +156,9 @@ MonoBehaviour:
   height: 0
   minimumScale: 1
   maximumScale: 2
-  distanceScale: 200
-  radius: 3
+  distanceScale: 150
+  acceleration: 150
+  radius: 17
   setStartScale: {x: 1, y: 1, z: 1}
 --- !u!136 &136000011908952982
 CapsuleCollider:
