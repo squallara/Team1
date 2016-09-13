@@ -6,6 +6,7 @@ public class MonsterMovement : MonoBehaviour
 
     public static MonsterMovement monsterMovementCurrent;
     public Transform target; //what to follow (piggy)
+    public float monsterHealth = 100f;
 
     private NavMeshAgent nav;
     private BoxCollider boxCollider;

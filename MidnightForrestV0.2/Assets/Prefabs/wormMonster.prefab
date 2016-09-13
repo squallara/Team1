@@ -96,7 +96,6 @@ GameObject:
   - 4: {fileID: 4000013578624290}
   - 95: {fileID: 95000013034938008}
   - 54: {fileID: 54000013498182228}
-  - 135: {fileID: 135000013896448154}
   - 65: {fileID: 65000012884622062}
   - 23: {fileID: 23000011939552118}
   - 195: {fileID: 195000014154680314}
@@ -1504,18 +1503,6 @@ MonoBehaviour:
   biteRange: 2
   timeBetweenBites: 2
   biteDamage: 25
---- !u!135 &135000013896448154
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010496781912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.23725
-  m_Center: {x: 0, y: 0, z: -1.4}
 --- !u!137 &137000011369224290
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
