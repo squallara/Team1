@@ -5,48 +5,47 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
-    public Canvas GUI_canvas;
+    public GameObject GUI;
     public GameObject Instruction;
-
-    Canvas UI_canvas;
+    public GameObject Menu;
 
     void Start()
     {
-        UI_canvas = GetComponent<Canvas>();
-        UI_canvas.enabled = false;
+        Menu.SetActive(false);
         Instruction.SetActive(false);
-        GUI_canvas.enabled = true;
+        GUI.SetActive(true);
     }
 
     public void OpenMenu()
     {
-        UI_canvas.enabled = true;
+        Menu.SetActive(true);
         Time.timeScale = 0;
-        GUI_canvas.enabled = false;
+        GUI.SetActive(false);
     }
 
     public void Resume()
     {
-        UI_canvas.enabled = false;
+        Menu.SetActive(false);
         Time.timeScale = 1;
-        GUI_canvas.enabled = true;
+        GUI.SetActive(true);
     }
 
     public void New_Game()
     {
-        SceneManager.LoadScene("Scene_Name");
+        SceneManager.LoadScene("DEVELOPMENT");
     }
 
     public void Instructions()
     {
         Instruction.SetActive(true);
+        Menu.SetActive(false);
         Debug.Log("Instructions go here");
     }
 
     public void CloseInstructions()
     {
         Instruction.SetActive(false);
-        UI_canvas.enabled = true;
+        Menu.SetActive(true);
     }
 
     public void Quit()
