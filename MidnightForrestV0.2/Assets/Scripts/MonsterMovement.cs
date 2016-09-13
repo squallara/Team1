@@ -6,22 +6,28 @@ public class MonsterMovement : MonoBehaviour
 
     public static MonsterMovement monsterMovementCurrent;
     public Transform target; //what to follow (piggy)
+    public float maximumMonsterHealth = 100f;
+    float normalisedHealthAmount;
+    public float currentHealth;
 
     private NavMeshAgent nav;
     private BoxCollider boxCollider;
 
     public bool isDead = false;
     public bool followPiggy = false;
+    bool regainingHealth = true;
 
+    public float regenAmount = 30.0f;
     public float startSpeed = 5.0f; //Monster speed
     public float slowDown; //Speed decrease
     public float patrolDist;
-    public float startParticleSpeed;
-    public float maximumParticleSpeed;
-    public float startingEmission;
-    private float emmisionRate;
-    public float maximumEmissionRate;
+   
 
+    public bool isAttacking;
+    float currentSpeed;
+
+    float regenTimer = 0.0f;
+    public float TimeBeforeRegen = 3;
 
     Animator wormAnim;
 
@@ -33,16 +39,20 @@ public class MonsterMovement : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Piggy").transform;
 		wormAnim = GetComponent<Animator> ();
         Patrol();
+        currentSpeed = startSpeed;
     }
 
     void Start () {
         monsterMovementCurrent = this;
+        currentHealth = maximumMonsterHealth;
+        normalisedHealthAmount = 1;
     }
 
     void Update()
     {
         if (followPiggy == true)
         {
+           
             nav.SetDestination(target.position); //move towards target
         }
 
@@ -51,6 +61,24 @@ public class MonsterMovement : MonoBehaviour
             if (nav.remainingDistance < patrolDist)
             {
                 Patrol(); //Only reassigns new position when close to selected position
+            }
+        }
+
+        if(isAttacking)
+        {
+            nav.speed = 0;
+        }else
+        {
+            nav.speed = currentSpeed;
+        }
+
+        if (regainingHealth)
+        {
+            regenTimer += Time.deltaTime;
+            if (regenTimer >= TimeBeforeRegen)
+            {
+                currentHealth = Mathf.Clamp(currentHealth + (regenAmount * Time.deltaTime), 0, maximumMonsterHealth);
+                currentSpeed = Mathf.Clamp(currentSpeed + (regenAmount * Time.deltaTime), 0, startSpeed);
             }
         }
     }
@@ -73,15 +101,26 @@ public class MonsterMovement : MonoBehaviour
 
     public void LightSpeed()
     {
+        regainingHealth = false;
+        regenTimer = 0.0f;
+
+        currentHealth = Mathf.Clamp(currentHealth - (slowDown * Time.deltaTime), 0 , maximumMonsterHealth);
+
+        normalisedHealthAmount = currentHealth / maximumMonsterHealth;
+
+            
+
+            //Mathf.Clamp(currentHealth - (slowDown * Time.deltaTime), 0.0f, maximumMonsterHealth);
+        
         //float particleSpeed = DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().startSpeed;
-        nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
+        currentSpeed = Mathf.Clamp(startSpeed*normalisedHealthAmount, 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
         //float normalizedSpeed = Mathf.Abs(startSpeed / nav.speed);
        // particleSpeed = Mathf.Clamp(particleSpeed + (slowDown * Time.deltaTime), startParticleSpeed, maximumParticleSpeed) * normalizedSpeed;
         //emmisionRate = Mathf.Clamp(emmisionRate + (slowDown * Time.deltaTime), startingEmission, maximumEmissionRate) * normalizedSpeed;
         //DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().startSpeed = particleSpeed;
         //DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().emissionRate = emmisionRate;
 
-        if (nav.speed <= 0 && isDead == false)
+        if (currentHealth <= 0 && isDead == false)
         {
             AkSoundEngine.PostEvent("Worm_Disappear", gameObject);
 			wormAnim.SetBool ("WormRecoil", true);
@@ -91,7 +130,7 @@ public class MonsterMovement : MonoBehaviour
 
     public void RegainSpeed()
     {
-        nav.speed = startSpeed;
+        regainingHealth = true;
     }
 
 	void WormDeathEvent()
