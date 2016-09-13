@@ -20,6 +20,7 @@ public class UIManager : MonoBehaviour {
    
     void Start()
     {
+        Time.timeScale = 1;
         AkSoundEngine.PostEvent("MenuButton", gameObject);
         Menu.SetActive(false);
         Instruction1.SetActive(false);

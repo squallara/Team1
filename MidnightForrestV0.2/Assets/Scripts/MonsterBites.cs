@@ -76,7 +76,7 @@ public class MonsterBites : MonoBehaviour {
             break;
         }
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(15);
 
         FadingLight.fadeCurrent.spotLight.GetComponent<Light>().intensity = 7;
         FadingLight.fadeCurrent.pointLight.GetComponent<Light>().intensity = 7;
