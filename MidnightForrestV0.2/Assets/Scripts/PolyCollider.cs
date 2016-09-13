@@ -7,6 +7,12 @@ public class PolyCollider : MonoBehaviour
     MonsterMovement monsterMM;
     //MonsterHealth monsterHP;
 
+    void OnTriggerEnter(Collider monster) {
+        if (monster.tag == "monster") {
+           // DamagingParticles.damageCurrent.StartParticles();
+        }
+    }
+
     void OnTriggerStay(Collider hittingCollider)
     {
         if (hittingCollider.tag == "monster")
@@ -14,7 +20,6 @@ public class PolyCollider : MonoBehaviour
             //monsterHP = hittingCollider.GetComponent<MonsterHealth>();
             //monsterHP.TakeDamage();
             monsterMM = hittingCollider.GetComponent<MonsterMovement>();
-			Debug.Log ("light speed triggering");
             monsterMM.LightSpeed();
         }
     }
@@ -25,6 +30,7 @@ public class PolyCollider : MonoBehaviour
         {
             monsterMM = monster.GetComponent<MonsterMovement>();
             monsterMM.RegainSpeed();
+           // DamagingParticles.damageCurrent.StopParticles();
         }
     }
 }

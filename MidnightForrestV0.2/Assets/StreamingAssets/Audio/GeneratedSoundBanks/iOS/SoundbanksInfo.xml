@@ -22,10 +22,16 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2981377429" Name="Ambiance" ObjectPath="\Events\Default Work Unit\Ambiance"/>
+				<Event Id="2192397196" Name="MenuButton" ObjectPath="\Events\Default Work Unit\MenuButton"/>
+				<Event Id="2836636979" Name="Pig_Damaged" ObjectPath="\Events\Default Work Unit\Pig_Damaged"/>
 				<Event Id="2554214570" Name="Pig_Swim" ObjectPath="\Events\Default Work Unit\Pig_Swim"/>
 				<Event Id="1750874649" Name="Pig_Swim_Stop" ObjectPath="\Events\Default Work Unit\Pig_Swim_Stop"/>
 				<Event Id="3181627793" Name="Piglet_Pickup" ObjectPath="\Events\Default Work Unit\Piglet_Pickup"/>
 				<Event Id="2444492466" Name="Piglet_Scream" ObjectPath="\Events\Default Work Unit\Piglet_Scream"/>
+				<Event Id="2481768143" Name="Worm_Attack" ObjectPath="\Events\Default Work Unit\Worm_Attack"/>
+				<Event Id="2399068542" Name="Worm_Disappear" ObjectPath="\Events\Default Work Unit\Worm_Disappear"/>
+				<Event Id="1347007871" Name="Worm_Swim" ObjectPath="\Events\Default Work Unit\Worm_Swim"/>
+				<Event Id="3831645642" Name="Worm_Swim_Stop" ObjectPath="\Events\Default Work Unit\Worm_Swim_Stop"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="14875552" Language="SFX">
@@ -48,6 +54,10 @@
 					<ShortName>Bat Screams_8.wav</ShortName>
 					<Path>SFX\Bat Screams_8_9E69E797.wem</Path>
 				</File>
+				<File Id="83490524" Language="SFX">
+					<ShortName>Worm Disappear_4.wav</ShortName>
+					<Path>SFX\Worm Disappear_4_9E69E797.wem</Path>
+				</File>
 				<File Id="86558883" Language="SFX">
 					<ShortName>Bat Screams_11.wav</ShortName>
 					<Path>SFX\Bat Screams_11_9E69E797.wem</Path>
@@ -56,9 +66,17 @@
 					<ShortName>Drip_11.wav</ShortName>
 					<Path>SFX\Drip_11_9E69E797.wem</Path>
 				</File>
+				<File Id="92786696" Language="SFX">
+					<ShortName>Worm Disappear.wav</ShortName>
+					<Path>SFX\Worm Disappear_9E69E797.wem</Path>
+				</File>
 				<File Id="93855581" Language="SFX">
 					<ShortName>Drip_14.wav</ShortName>
 					<Path>SFX\Drip_14_9E69E797.wem</Path>
+				</File>
+				<File Id="95055791" Language="SFX">
+					<ShortName>Worm Disappear_2.wav</ShortName>
+					<Path>SFX\Worm Disappear_2_9E69E797.wem</Path>
 				</File>
 				<File Id="97771784" Language="SFX">
 					<ShortName>Pig Swim_7.wav</ShortName>
@@ -72,6 +90,14 @@
 					<ShortName>Bat Screams_2.wav</ShortName>
 					<Path>SFX\Bat Screams_2_9E69E797.wem</Path>
 				</File>
+				<File Id="158478567" Language="SFX">
+					<ShortName>Worm Attack_8.wav</ShortName>
+					<Path>SFX\Worm Attack_8_9E69E797.wem</Path>
+				</File>
+				<File Id="164528855" Language="SFX">
+					<ShortName>Worm Disappear_5.wav</ShortName>
+					<Path>SFX\Worm Disappear_5_9E69E797.wem</Path>
+				</File>
 				<File Id="169879184" Language="SFX">
 					<ShortName>Drip_12.wav</ShortName>
 					<Path>SFX\Drip_12_9E69E797.wem</Path>
@@ -79,6 +105,10 @@
 				<File Id="204815079" Language="SFX">
 					<ShortName>Pig Swim_8.wav</ShortName>
 					<Path>SFX\Pig Swim_8_9E69E797.wem</Path>
+				</File>
+				<File Id="207011237" Language="SFX">
+					<ShortName>Pig_Scream.wav</ShortName>
+					<Path>SFX\Pig_Scream_28654EFA.wem</Path>
 				</File>
 				<File Id="228545082" Language="SFX">
 					<ShortName>Bat Screams_3.wav</ShortName>
@@ -111,6 +141,10 @@
 				<File Id="391142184" Language="SFX">
 					<ShortName>Pig_Happy.wav</ShortName>
 					<Path>SFX\Pig_Happy_9E69E797.wem</Path>
+				</File>
+				<File Id="403872176" Language="SFX">
+					<ShortName>Worm Attack_7.wav</ShortName>
+					<Path>SFX\Worm Attack_7_9E69E797.wem</Path>
 				</File>
 				<File Id="408165373" Language="SFX">
 					<ShortName>Drip_5.wav</ShortName>
@@ -156,6 +190,10 @@
 					<ShortName>Bat Screams.wav</ShortName>
 					<Path>SFX\Bat Screams_9E69E797.wem</Path>
 				</File>
+				<File Id="623203006" Language="SFX">
+					<ShortName>Worm Disappear_1.wav</ShortName>
+					<Path>SFX\Worm Disappear_1_9E69E797.wem</Path>
+				</File>
 				<File Id="623979269" Language="SFX">
 					<ShortName>Drip_8.wav</ShortName>
 					<Path>SFX\Drip_8_9E69E797.wem</Path>
@@ -172,6 +210,14 @@
 					<ShortName>Drip_2.wav</ShortName>
 					<Path>SFX\Drip_2_9E69E797.wem</Path>
 				</File>
+				<File Id="730696418" Language="SFX">
+					<ShortName>Pig_Scream_1.wav</ShortName>
+					<Path>SFX\Pig_Scream_1_0FBCA0BF.wem</Path>
+				</File>
+				<File Id="768912947" Language="SFX">
+					<ShortName>Pig_Scream_3.wav</ShortName>
+					<Path>SFX\Pig_Scream_3_5F13F7A3.wem</Path>
+				</File>
 				<File Id="773835123" Language="SFX">
 					<ShortName>Drip_4.wav</ShortName>
 					<Path>SFX\Drip_4_9E69E797.wem</Path>
@@ -183,6 +229,10 @@
 				<File Id="858874920" Language="SFX">
 					<ShortName>Drip_3.wav</ShortName>
 					<Path>SFX\Drip_3_9E69E797.wem</Path>
+				</File>
+				<File Id="883168400" Language="SFX">
+					<ShortName>Worm Disappear_3.wav</ShortName>
+					<Path>SFX\Worm Disappear_3_9E69E797.wem</Path>
 				</File>
 				<File Id="892763560" Language="SFX">
 					<ShortName>Pig Swim_4.wav</ShortName>
@@ -208,6 +258,18 @@
 					<ShortName>Pig Swim.wav</ShortName>
 					<Path>SFX\Pig Swim_9E69E797.wem</Path>
 				</File>
+				<File Id="986183633" Language="SFX">
+					<ShortName>Worm Attack_9.wav</ShortName>
+					<Path>SFX\Worm Attack_9_9E69E797.wem</Path>
+				</File>
+				<File Id="994670908" Language="SFX">
+					<ShortName>Pig_Scream_2.wav</ShortName>
+					<Path>SFX\Pig_Scream_2_D66C4C4B.wem</Path>
+				</File>
+				<File Id="1011996570" Language="SFX">
+					<ShortName>Worm Attack_6.wav</ShortName>
+					<Path>SFX\Worm Attack_6_9E69E797.wem</Path>
+				</File>
 				<File Id="1025083526" Language="SFX">
 					<ShortName>Drip_9.wav</ShortName>
 					<Path>SFX\Drip_9_9E69E797.wem</Path>
@@ -219,6 +281,10 @@
 				<File Id="1049405759" Language="SFX">
 					<ShortName>Bat Screams_1.wav</ShortName>
 					<Path>SFX\Bat Screams_1_9E69E797.wem</Path>
+				</File>
+				<File Id="1056794682" Language="SFX">
+					<ShortName>Worm Attack_5.wav</ShortName>
+					<Path>SFX\Worm Attack_5_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

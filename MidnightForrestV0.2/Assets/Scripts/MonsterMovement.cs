@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class MonsterMovement : MonoBehaviour
+public class MonsterMovement : MonoBehaviour  
 {
+
+    public static MonsterMovement monsterMovementCurrent;
     public Transform target; //what to follow (piggy)
 
     private NavMeshAgent nav;
@@ -14,8 +16,14 @@ public class MonsterMovement : MonoBehaviour
     public float startSpeed = 5.0f; //Monster speed
     public float slowDown; //Speed decrease
     public float patrolDist;
+    public float startParticleSpeed;
+    public float maximumParticleSpeed;
+    public float startingEmission;
+    private float emmisionRate;
+    public float maximumEmissionRate;
 
-	Animator wormAnim;
+
+    Animator wormAnim;
 
     void Awake()
     {
@@ -26,6 +34,11 @@ public class MonsterMovement : MonoBehaviour
 		wormAnim = GetComponent<Animator> ();
         Patrol();
     }
+
+    void Start () {
+        monsterMovementCurrent = this;
+    }
+
     void Update()
     {
         if (followPiggy == true)
@@ -60,12 +73,17 @@ public class MonsterMovement : MonoBehaviour
 
     public void LightSpeed()
     {
+        //float particleSpeed = DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().startSpeed;
         nav.speed = Mathf.Clamp(nav.speed - (slowDown * Time.deltaTime), 0.0f, startSpeed); //Damage the enemy (basically slowing it down)
-        //DamagingParticles.damageCurrent.StartParticles();
-        Debug.Log(nav.speed);
-		Debug.Log ("Slowing down");
+        //float normalizedSpeed = Mathf.Abs(startSpeed / nav.speed);
+       // particleSpeed = Mathf.Clamp(particleSpeed + (slowDown * Time.deltaTime), startParticleSpeed, maximumParticleSpeed) * normalizedSpeed;
+        //emmisionRate = Mathf.Clamp(emmisionRate + (slowDown * Time.deltaTime), startingEmission, maximumEmissionRate) * normalizedSpeed;
+        //DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().startSpeed = particleSpeed;
+        //DamagingParticles.damageCurrent.GetComponent<ParticleSystem>().emissionRate = emmisionRate;
+
         if (nav.speed <= 0 && isDead == false)
         {
+            AkSoundEngine.PostEvent("Worm_Disappear", gameObject);
 			wormAnim.SetBool ("WormRecoil", true);
             //Death();
         }
@@ -77,7 +95,7 @@ public class MonsterMovement : MonoBehaviour
     }
 
 	void WormDeathEvent()
-    {
+    {   
         Destroy(gameObject);
         isDead = true;
         followPiggy = false;
