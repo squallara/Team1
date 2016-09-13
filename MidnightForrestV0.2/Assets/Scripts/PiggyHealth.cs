@@ -25,7 +25,8 @@ public class PiggyHealth : MonoBehaviour {
 	public void TakeDamage(int amount){
 		currentHealth -= amount;
         piggHP--;
-		//light.intensity -= 0.01f * amount;
+        //light.intensity -= 0.01f * amount;
+        AkSoundEngine.PostEvent("Pig_Damaged", gameObject);
 		anim.SetTrigger ("Recoil");
 		if (currentHealth <= 0 && !isDead) {
 			Death (); //should die

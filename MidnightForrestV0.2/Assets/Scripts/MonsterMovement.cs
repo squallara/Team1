@@ -83,6 +83,7 @@ public class MonsterMovement : MonoBehaviour
 
         if (nav.speed <= 0 && isDead == false)
         {
+            AkSoundEngine.PostEvent("Worm_Disappear", gameObject);
 			wormAnim.SetBool ("WormRecoil", true);
             //Death();
         }
@@ -94,7 +95,7 @@ public class MonsterMovement : MonoBehaviour
     }
 
 	void WormDeathEvent()
-    {
+    {   
         Destroy(gameObject);
         isDead = true;
         followPiggy = false;

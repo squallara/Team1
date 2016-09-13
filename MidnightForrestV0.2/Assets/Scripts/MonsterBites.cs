@@ -44,6 +44,7 @@ public class MonsterBites : MonoBehaviour {
     }
     void Bite() {
         timer = 0f;
+        AkSoundEngine.PostEvent("Worm_Attack", gameObject);
         anim.SetBool("WormAttack", true);
         if (piggyHealth.currentHealth > 0) {
             piggyHealth.TakeDamage(biteDamage);
