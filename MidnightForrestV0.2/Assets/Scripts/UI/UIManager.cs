@@ -1,42 +1,52 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
-    public Canvas GUI_canvas;
-
-    Canvas UI_canvas;
+    public GameObject GUI;
+    public GameObject Instruction;
+    public GameObject Menu;
 
     void Start()
     {
-        UI_canvas = GetComponent<Canvas>();
-        UI_canvas.enabled = false;
-        GUI_canvas.enabled = true;
+        Menu.SetActive(false);
+        Instruction.SetActive(false);
+        GUI.SetActive(true);
     }
 
     public void OpenMenu()
     {
-        UI_canvas.enabled = true;
+        Menu.SetActive(true);
         Time.timeScale = 0;
-        GUI_canvas.enabled = false;
+        GUI.SetActive(false);
     }
 
     public void Resume()
     {
-        UI_canvas.enabled = false;
+        Menu.SetActive(false);
         Time.timeScale = 1;
-        GUI_canvas.enabled = true;
+        GUI.SetActive(true);
     }
 
-    public void Options()
+    public void New_Game()
     {
-        Debug.Log("This is the options?");
+        SceneManager.LoadScene("DEVELOPMENT");
+        Time.timeScale = 1;
     }
 
     public void Instructions()
     {
+        Instruction.SetActive(true);
+        Menu.SetActive(false);
         Debug.Log("Instructions go here");
+    }
+
+    public void CloseInstructions()
+    {
+        Instruction.SetActive(false);
+        Menu.SetActive(true);
     }
 
     public void Quit()
