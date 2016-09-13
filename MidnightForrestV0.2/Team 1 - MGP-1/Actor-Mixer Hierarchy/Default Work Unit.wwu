@@ -29,7 +29,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
@@ -1657,7 +1657,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
@@ -1837,6 +1837,702 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Worm_Attack" ID="{BC4CC73F-087D-48B4-AEF9-7A06A221D486}" ShortID="666893320">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance Attenuation" ID="{BE7B56FF-53D8-4D7C-BA00-E66D5D1BB69E}" WorkUnitID="{2A302BF5-F31B-4299-A9C9-F65807CE74FF}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Worm Attack_5" ID="{486FD345-0CBB-49D4-95D9-32CE395C5D6B}" ShortID="783358765" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Attack_5" ID="{E97BDBE6-410A-4F52-A4AC-3A459719434F}" ShortID="1056794682">
+									<Language>SFX</Language>
+									<AudioFile>Worm Attack_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Attack_5" ID="{E97BDBE6-410A-4F52-A4AC-3A459719434F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Attack_6" ID="{8B792D1D-03DD-4EA0-B779-6ABBB012CC4A}" ShortID="505739672" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Attack_6" ID="{E0B44691-C8BB-4D8A-B5A1-1960C12F5EBF}" ShortID="1011996570">
+									<Language>SFX</Language>
+									<AudioFile>Worm Attack_6.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Attack_6" ID="{E0B44691-C8BB-4D8A-B5A1-1960C12F5EBF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Attack_7" ID="{F24B0B9C-96BA-4D01-9FE8-91C9E16A0C08}" ShortID="83887352" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Attack_7" ID="{08410D42-FF26-4F43-BB39-7F218E3549A5}" ShortID="403872176">
+									<Language>SFX</Language>
+									<AudioFile>Worm Attack_7.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Attack_7" ID="{08410D42-FF26-4F43-BB39-7F218E3549A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Attack_8" ID="{CF61F59B-7FE6-47D9-8DDD-B29867073856}" ShortID="548256197" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Attack_8" ID="{E4383CCF-DAAE-4FCC-8DFF-3315524197B2}" ShortID="158478567">
+									<Language>SFX</Language>
+									<AudioFile>Worm Attack_8.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Attack_8" ID="{E4383CCF-DAAE-4FCC-8DFF-3315524197B2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Attack_9" ID="{CCE772C5-323A-4C76-8594-44B44DE78D79}" ShortID="42696939" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Attack_9" ID="{B6E33048-0261-4BAD-88AE-B60C6574BDBA}" ShortID="986183633">
+									<Language>SFX</Language>
+									<AudioFile>Worm Attack_9.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Attack_9" ID="{B6E33048-0261-4BAD-88AE-B60C6574BDBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Worm_Disappear" ID="{FEC63FEA-0A6E-4A1C-9D4B-19C85C15AED9}" ShortID="457617381">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance Attenuation" ID="{BE7B56FF-53D8-4D7C-BA00-E66D5D1BB69E}" WorkUnitID="{2A302BF5-F31B-4299-A9C9-F65807CE74FF}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Worm Disappear" ID="{F3BA96A3-DABF-47CB-ABEF-2823AF97BA52}" ShortID="930239182" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear" ID="{D3A41CBC-EAE0-4FEE-A8E0-216755694FA5}" ShortID="92786696">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear" ID="{D3A41CBC-EAE0-4FEE-A8E0-216755694FA5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Disappear_1" ID="{110F37AF-86BB-4BB6-8BBD-EBDFD6C6932A}" ShortID="9956066" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear_1" ID="{6F6B3E28-6B0D-4B5B-BCBD-09B4991E23DF}" ShortID="623203006">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear_1" ID="{6F6B3E28-6B0D-4B5B-BCBD-09B4991E23DF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Disappear_2" ID="{2E2B2C49-4E65-48E3-B82C-231974C7EE3B}" ShortID="900606404" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear_2" ID="{B4FB58F3-D986-4D46-816C-B6578DDA4CC2}" ShortID="95055791">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear_2" ID="{B4FB58F3-D986-4D46-816C-B6578DDA4CC2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Disappear_3" ID="{98C25351-76F4-49C5-8025-9F385E98D061}" ShortID="355420443" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear_3" ID="{32757C6B-03AF-49C8-82BD-F12EBF2D58C1}" ShortID="883168400">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear_3" ID="{32757C6B-03AF-49C8-82BD-F12EBF2D58C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Disappear_4" ID="{7499E821-2855-452E-93C2-46454A795DA7}" ShortID="379334567" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear_4" ID="{B60365F2-F9A4-456B-ACFE-48081B57A44A}" ShortID="83490524">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear_4.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear_4" ID="{B60365F2-F9A4-456B-ACFE-48081B57A44A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Worm Disappear_5" ID="{76D69DE7-77F6-4661-A5B1-68301D757AE3}" ShortID="68355808" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Worm Disappear_5" ID="{F75FE3EB-924A-413D-91D9-162B91414255}" ShortID="164528855">
+									<Language>SFX</Language>
+									<AudioFile>Worm Disappear_5.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Worm Disappear_5" ID="{F75FE3EB-924A-413D-91D9-162B91414255}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Worm_Swim" ID="{88B0EF70-5888-4F6B-9F15-BC1AA6C1B4C1}" ShortID="268645258">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>1000</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8D944937-539F-4A32-9868-81EEE85D4E1C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance Attenuation" ID="{BE7B56FF-53D8-4D7C-BA00-E66D5D1BB69E}" WorkUnitID="{2A302BF5-F31B-4299-A9C9-F65807CE74FF}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Pig Swim" ID="{39FB6428-93AC-4D03-AD16-08A987B6BDE0}" ShortID="376187845" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim" ID="{FC151B83-3444-4ACB-B304-5E4131022B75}" ShortID="880487502">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="974008332"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim" ID="{FC151B83-3444-4ACB-B304-5E4131022B75}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_1" ID="{B46825FA-2522-4F79-8FB2-820333528846}" ShortID="625079981" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_1" ID="{5A1949B8-EAA0-43A8-89BF-F3CD72A7DFDB}" ShortID="985569643">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_1.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="345848941"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_1" ID="{5A1949B8-EAA0-43A8-89BF-F3CD72A7DFDB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_2" ID="{18EA96D1-80EE-4B49-9851-0C45F59BB002}" ShortID="435153630" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_2" ID="{997B78E9-947C-4B9B-9CF2-CCA5503AFF29}" ShortID="64369947">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_2.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="52847732"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_2" ID="{997B78E9-947C-4B9B-9CF2-CCA5503AFF29}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_3" ID="{E17DE805-0102-467F-9E5F-59004BFE0833}" ShortID="849674117" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_3" ID="{395847A5-DDE7-49C7-8670-5BE26DCFEF60}" ShortID="299364899">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_3.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="524833281"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_3" ID="{395847A5-DDE7-49C7-8670-5BE26DCFEF60}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_4" ID="{9C1044EE-48AA-4760-AB4F-47DE6BC3B32A}" ShortID="250696899" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_4" ID="{1AC23B8E-C02A-4E7E-B098-8CAE14226163}" ShortID="649858916">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_4.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="892763560"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_4" ID="{1AC23B8E-C02A-4E7E-B098-8CAE14226163}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_5" ID="{2394D1B9-715F-412F-9246-66C7FF71865F}" ShortID="2639380" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_5" ID="{9CD35EBC-B649-4EA5-AE25-69CECDAB379C}" ShortID="721680294">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_5.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="408847842"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_5" ID="{9CD35EBC-B649-4EA5-AE25-69CECDAB379C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_6" ID="{E6F1353F-CD30-476F-9A56-866CD2F4637A}" ShortID="432090044" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_6" ID="{C49AEFF6-EE73-4CEF-8D68-5A5023BCA3FF}" ShortID="1053085050">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_6.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="893698022"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_6" ID="{C49AEFF6-EE73-4CEF-8D68-5A5023BCA3FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_7" ID="{F855035A-61FD-4DC0-AB47-3D120A6FB090}" ShortID="285510041" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_7" ID="{02A1CA3D-5946-4444-A89F-E6B5233B25FF}" ShortID="24019115">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_7.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="97771784"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_7" ID="{02A1CA3D-5946-4444-A89F-E6B5233B25FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig Swim_8" ID="{E6AE0024-995A-4646-8054-73EF900CC539}" ShortID="558542953" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig Swim_8" ID="{E75DBF15-F084-461A-A988-F0A4F5F89E8D}" ShortID="24834429">
+									<Language>SFX</Language>
+									<AudioFile>Pig Swim_8.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="204815079"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig Swim_8" ID="{E75DBF15-F084-461A-A988-F0A4F5F89E8D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pig_Damaged" ID="{88846F7E-590F-463B-8F6F-5F443D32D899}" ShortID="757678267">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-300</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{986761DF-0F9C-4469-9AD1-661CB0B588A1}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="150"/>
+											<Property Name="Min" Type="Real64" Value="-150"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{077ECB83-F563-460B-BF59-31EA07EFC9F5}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2"/>
+											<Property Name="Min" Type="Real64" Value="-1"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance Attenuation" ID="{BE7B56FF-53D8-4D7C-BA00-E66D5D1BB69E}" WorkUnitID="{2A302BF5-F31B-4299-A9C9-F65807CE74FF}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{DC415151-AEFF-4DDF-99B6-4333A1BF9DBB}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="env_cave" ID="{D6851DFD-0C10-44F4-B3F6-7C24588FDCCD}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Pig_Scream" ID="{218AB0E8-2754-4FE8-83F3-CDD4CCC3A1A9}" ShortID="838499002" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig_Scream" ID="{35ABCC94-8B84-4E8F-A8F3-630CBD9CF34C}" ShortID="207011237">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.224642857142857"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.495833333333333"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pig_Scream.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig_Scream" ID="{35ABCC94-8B84-4E8F-A8F3-630CBD9CF34C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig_Scream_1" ID="{CA4EFC7D-AAE7-4D70-9749-7D38D40D3829}" ShortID="436912381" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig_Scream_1" ID="{74A928D1-A378-4525-85FF-B50029256DAF}" ShortID="730696418">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3.58054082961309E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.144778390066964"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.806400065104167"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.23139469401042"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pig_Scream_1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig_Scream_1" ID="{74A928D1-A378-4525-85FF-B50029256DAF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig_Scream_2" ID="{FF989862-1AB2-4A94-8F99-3503BF16B609}" ShortID="534829498" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig_Scream_2" ID="{7666DE82-E589-4F88-AEDF-901D3F0EA387}" ShortID="994670908">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="3.25714285714285E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.124857142857143"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.445142857142857"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.810214285714286"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pig_Scream_2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig_Scream_2" ID="{7666DE82-E589-4F88-AEDF-901D3F0EA387}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Pig_Scream_3" ID="{E9535DC1-3DC7-4053-95FE-8A70D340D488}" ShortID="548565074" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pig_Scream_3" ID="{598E2B5B-9566-4802-A7B0-F2DC548FD879}" ShortID="768912947">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.80952380952381E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.100952380952381"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.197142857142857"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.552380952380952"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pig_Scream_3.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Pig_Scream_3" ID="{598E2B5B-9566-4802-A7B0-F2DC548FD879}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="MenuButton" ID="{07A59FA6-785C-4D78-B2CD-43315B70DD21}" ShortID="141495108" Type="SoundFX">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{98CB693E-079C-49E4-B8CD-6D3D6BA88543}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{05B7CFD6-C0C2-40EF-96CB-E8601B76C4C5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Drip_2" ID="{87E65C79-23E9-4872-A15B-15627786FF0A}" ShortID="92897628">
+							<Language>SFX</Language>
+							<AudioFile>Drip_2.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="660614130"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Drip_2" ID="{87E65C79-23E9-4872-A15B-15627786FF0A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

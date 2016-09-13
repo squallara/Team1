@@ -39,6 +39,9 @@
 				<Event Name="Pig_Swim_Stop" ID="{1AB9B6A6-954F-4E24-B1E8-D969C82C7071}">
 					<ChildrenList>
 						<Action Name="Stop" ID="{48F2ACE7-52E0-446B-96DA-E9218F4CB5BC}" ShortID="577693069" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{24E78A5D-8729-4AA5-842F-45E13C864FC0}" Global="false">
 									<ObjectRef Name="Pig_Swim" ID="{59371342-08BB-47C0-8B95-B78520A70071}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
@@ -75,6 +78,72 @@
 							<ElementList>
 								<Element ID="{BE516810-0F62-4788-8BDE-4E8525F4B120}" Global="false">
 									<ObjectRef Name="Bat_Screams" ID="{DFA5580B-8B04-4D7F-A64D-0433984D9A97}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Worm_Attack" ID="{2EDAEDC3-5205-4520-9B56-418524FE060E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{331C469E-453E-4BE6-A560-700988E534BC}" ShortID="170661800" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8E22D6F0-85AB-4FC6-8C67-C7B37A197D93}" Global="false">
+									<ObjectRef Name="Worm_Attack" ID="{BC4CC73F-087D-48B4-AEF9-7A06A221D486}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Worm_Disappear" ID="{72B793AF-3A9F-4B0C-A477-CA1FC5108C2B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{44A7EF68-0B63-4D12-A25D-6708C75B3535}" ShortID="173515178" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2C4C257C-FF53-4DC7-A09F-F8FD0443F4DF}" Global="false">
+									<ObjectRef Name="Worm_Disappear" ID="{FEC63FEA-0A6E-4A1C-9D4B-19C85C15AED9}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Worm_Swim" ID="{52BFB02F-8359-4D13-A243-826771ECD3F4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{1301273E-8C06-4263-AC02-13A3E83680E4}" ShortID="595518327" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DD836D65-C81D-4F34-AD39-E8E4963CB7CD}" Global="false">
+									<ObjectRef Name="Worm_Swim" ID="{88B0EF70-5888-4F6B-9F15-BC1AA6C1B4C1}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Worm_Swim_Stop" ID="{B4C303A2-3F5F-4E45-B08E-1A0727CC7918}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{6B75CD3D-D46F-4783-81D8-31F9E7135156}" ShortID="905634827" Type="Stop" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{9C4CA1A7-431B-45E5-9033-8C4C1FE213D4}" Global="false">
+									<ObjectRef Name="Worm_Swim" ID="{88B0EF70-5888-4F6B-9F15-BC1AA6C1B4C1}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pig_Damaged" ID="{96963F49-F195-4702-9CCD-4B0E8AF2CAD6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{685E600C-5178-4CAD-94EC-D2BD572A8FE9}" ShortID="594518296" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0F4D7260-EA8C-4654-A2C7-F8210B34B62A}" Global="false">
+									<ObjectRef Name="Pig_Damaged" ID="{88846F7E-590F-463B-8F6F-5F443D32D899}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MenuButton" ID="{5D10AA9E-C8F4-47B9-8EBB-3E854D6E1904}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B125EC87-F379-44E5-AA7E-0DFBC3E7584E}" ShortID="1059439973" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{2CDA37F5-21EC-413D-9F7A-EF6D78C7DEA0}" Global="false">
+									<ObjectRef Name="MenuButton" ID="{07A59FA6-785C-4D78-B2CD-43315B70DD21}" WorkUnitID="{DE1D4936-9F9F-4383-88A7-FB91DADFF321}"/>
 								</Element>
 							</ElementList>
 						</Action>

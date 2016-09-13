@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{9DB98639-0307-4FFE-BD16-0FC2A7467D6B}'
-    m_lastTimePsrt1: 650172984
-    m_lastTimePart2: -1999381744
+    m_lastTimePsrt1: -1230248050
+    m_lastTimePart2: -1999381562
     List:
     - Name: Ambiance
       Path: Default Work Unit\Ambiance
@@ -28,6 +28,26 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1313589867
       Guid: ecb0000118a939479c16c27c53881f47
+      maxAttenuation: 0
+    - Name: MenuButton
+      Path: Default Work Unit\MenuButton
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuButton
+        ObjectType: 3
+      ID: -2102570100
+      Guid: 9eaa105df4c8b9478ebb3e854d6e1904
+      maxAttenuation: 0
+    - Name: Pig_Damaged
+      Path: Default Work Unit\Pig_Damaged
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pig_Damaged
+        ObjectType: 3
+      ID: -1458330317
+      Guid: 493f969695f102479ccd4b0e8af2cad6
       maxAttenuation: 0
     - Name: Pig_Swim
       Path: Default Work Unit\Pig_Swim
@@ -68,6 +88,46 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1850474830
       Guid: 5696eb70bbe65541a11f0ba89977bfad
+      maxAttenuation: 0
+    - Name: Worm_Attack
+      Path: Default Work Unit\Worm_Attack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Worm_Attack
+        ObjectType: 3
+      ID: -1813199153
+      Guid: c3edda2e055220459b56418524fe060e
+      maxAttenuation: 0
+    - Name: Worm_Disappear
+      Path: Default Work Unit\Worm_Disappear
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Worm_Disappear
+        ObjectType: 3
+      ID: -1895898754
+      Guid: af93b7729f3a0c4ba477ca1fc5108c2b
+      maxAttenuation: 0
+    - Name: Worm_Swim
+      Path: Default Work Unit\Worm_Swim
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Worm_Swim
+        ObjectType: 3
+      ID: 1347007871
+      Guid: 2fb0bf525983134da243826771ecd3f4
+      maxAttenuation: 0
+    - Name: Worm_Swim_Stop
+      Path: Default Work Unit\Worm_Swim_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Worm_Swim_Stop
+        ObjectType: 3
+      ID: -463321654
+      Guid: a203c3b45f3f454eb08e1a0727cc7918
       maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -132,8 +192,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{634FB385-0020-4521-9C31-E7BA27A19102}'
-    m_lastTimePsrt1: -673724377
-    m_lastTimePart2: -1999381744
+    m_lastTimePsrt1: -1151693557
+    m_lastTimePart2: -1999381562
     List:
     - Name: Main
       Path: Default Work Unit\Main
