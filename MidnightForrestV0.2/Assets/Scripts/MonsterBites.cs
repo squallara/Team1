@@ -6,6 +6,8 @@ public class MonsterBites : MonoBehaviour {
 	public int biteDamage = 25;
 	GameObject piggy;
 	PiggyHealth piggyHealth;
+
+	Animator anim;	
     //MonsterHealth monsterHealth; //later
     float distance;
 	bool piggyInRange; //can monster bite?
@@ -17,6 +19,7 @@ public class MonsterBites : MonoBehaviour {
 		if(piggy != null)
 			piggyHealth = piggy.GetComponent<PiggyHealth> ();
 		//monsterHealth = GetComponent<MonsterHealth> ();
+		anim = GetComponent<Animator> ();
 	}
 	//void OnTriggerEnter(Collider hittingCollider){
 	//	if (hittingCollider.gameObject == piggy) { //is it piggy hitting
@@ -41,12 +44,18 @@ public class MonsterBites : MonoBehaviour {
 	}
 	void Bite(){
         timer = 0f;
+		//anim.SetBool("Attacked", true);
 		if (piggyHealth.currentHealth > 0) {
 			piggyHealth.TakeDamage (biteDamage);
             Debug.Log("BITE!");
             Handheld.Vibrate();
             StartCoroutine("FadingLights");
 		}
+	}
+
+	public void StopAttackEvent(){
+		//anim.SetBool("Attacked", false);
+		Debug.Log ("stopping attack143564768");
 	}
 
     IEnumerator FadingLights()
