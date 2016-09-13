@@ -3518,13 +3518,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 65000012884622062, guid: 647560c9d072a474db7c260189c1a48f,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Size.z
       value: 2.5433655
       objectReference: {fileID: 0}
-    - target: {fileID: 65000012884622062, guid: 647560c9d072a474db7c260189c1a48f,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: m_Center.z
       value: -1.5158136
       objectReference: {fileID: 0}
@@ -3846,7 +3844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c713e80315a0e439ab98b0033071f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 12
+  playerSpeed: 15
   acceleration: 150
   rotateRadius: 5
   speedMaxDist: 20

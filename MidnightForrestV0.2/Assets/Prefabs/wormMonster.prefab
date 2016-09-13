@@ -101,6 +101,8 @@ GameObject:
   - 195: {fileID: 195000014154680314}
   - 114: {fileID: 114000013910452022}
   - 114: {fileID: 114000010914725950}
+  - 114: {fileID: 114000012035450624}
+  - 135: {fileID: 135000010814991366}
   m_Layer: 0
   m_Name: wormMonster
   m_TagString: monster
@@ -1469,15 +1471,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maximumMonsterHealth: 100
+  currentHealth: 0
   isDead: 0
   followPiggy: 0
+  regenAmount: 30
   startSpeed: 15
-  slowDown: 6
+  slowDown: 60
   patrolDist: 0
-  startParticleSpeed: 2
-  maximumParticleSpeed: 5
-  startingEmission: 10
-  maximumEmissionRate: 100
+  isAttacking: 0
+  TimeBeforeRegen: 3
+--- !u!114 &114000012035450624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010496781912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea1c2f50d7ec8749bc7ecfe798b94e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBeforeAttack: 2
 --- !u!114 &114000012956978664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1503,6 +1518,18 @@ MonoBehaviour:
   biteRange: 2
   timeBetweenBites: 2
   biteDamage: 25
+--- !u!135 &135000010814991366
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010496781912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.4083639
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137000011369224290
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
