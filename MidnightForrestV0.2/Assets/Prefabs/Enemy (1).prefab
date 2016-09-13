@@ -27,7 +27,7 @@ GameObject:
   - 195: {fileID: 195000011317792682}
   - 114: {fileID: 114000010656611176}
   - 114: {fileID: 114000012762167422}
-  - 95: {fileID: 95000010467107046}
+  - 95: {fileID: 95000010036156586}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: monster
@@ -312,7 +312,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &95000010467107046
+--- !u!95 &95000010036156586
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1

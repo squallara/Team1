@@ -22,12 +22,13 @@ public class PigletOink : MonoBehaviour {
     float distanceFromStart;
     float previousDist;
     int distCounter;
-
-    Vector3 dir; // A variable to know the direction we look at
-    Vector3 startScale;
-
+    public Vector3 setStartScale;
+    
+    //Variables for updating the position, and checking if it has moved
     Vector3 previousPos;
     Vector3 startPos;
+
+    Vector3 startScale;
 
     // Use this for initialization
 
@@ -38,7 +39,7 @@ public class PigletOink : MonoBehaviour {
     }
     // Use this for initialization
     void Start() {
-        player = GameObject.FindGameObjectWithTag("Piggy");
+        player = GameObject.FindGameObjectWithTag("OinkTarget");
     }
 
     // Update is called once per frame
@@ -73,6 +74,7 @@ public class PigletOink : MonoBehaviour {
         Oink = (GameObject)Instantiate(OinkText);
         Oink.transform.position = new Vector3(transform.position.x, height, transform.position.z);
         Oink.transform.rotation = Camera.main.transform.rotation;
+        Oink.transform.localScale = setStartScale;
         startScale = Oink.transform.localScale;
         startPos = Oink.transform.position;
         isShot = true;
@@ -96,7 +98,7 @@ public class PigletOink : MonoBehaviour {
         if (Vector3.Distance(player.transform.position, transform.position) > distanceScale) {
             scaleFactor = minimumScale;
         } else {
-            scaleFactor = 1.0f - (Vector3.Distance(player.transform.position, transform.position) - 1f) / (distanceScale - 1f);
+            scaleFactor = (1.0f - (Vector3.Distance(player.transform.position, transform.position) - 1f) / (distanceScale - 1f)) + maximumScale;
             if (scaleFactor < minimumScale) {
                 scaleFactor = minimumScale;
             }

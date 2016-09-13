@@ -11,6 +11,7 @@ TagManager:
   - Spotlight
   - Piglet
   - Oink
+  - OinkTarget
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - 
   - 
   - Oink Layer
-  - 
-  - 
-  - 
+  - Radius
+  - Collectable
+  - Spotlight
   - 
   - 
   - 
