@@ -66,7 +66,6 @@ public class MonsterMovement : MonoBehaviour
 		Debug.Log ("Slowing down");
         if (nav.speed <= 0 && isDead == false)
         {
-            Debug.Log("Test");
 			wormAnim.SetBool ("WormRecoil", true);
             //Death();
         }

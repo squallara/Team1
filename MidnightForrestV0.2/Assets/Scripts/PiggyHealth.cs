@@ -49,18 +49,4 @@ public class PiggyHealth : MonoBehaviour {
 	public void StopRecoilEvent(){
 		anim.ResetTrigger ("Recoil");
 	}
-
-	void OnTriggerEnter(Collider hittingCollider){
-		print ("hit: "+ hittingCollider.tag);
-		if (hittingCollider.tag == "monster") {
-			Debug.Log ("EMERGING!!!!");
-			hittingCollider.gameObject.GetComponent<MonsterMovement> ().MonsterEmerge (true);
-		}
-	}
-
-	void OnTriggerExit(Collider hittingCollider){
-		if (hittingCollider.tag == "monster") {
-			hittingCollider.gameObject.GetComponent<MonsterMovement> ().MonsterEmerge (false);
-		}
-	}
 }
