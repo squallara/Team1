@@ -1473,8 +1473,8 @@ MonoBehaviour:
   isDead: 0
   followPiggy: 0
   regenAmount: 30
-  startSpeed: 15
-  slowDown: 6
+  startSpeed: 10
+  slowDown: 75
   patrolDist: 2
   isAttacking: 0
   TimeBeforeRegen: 3

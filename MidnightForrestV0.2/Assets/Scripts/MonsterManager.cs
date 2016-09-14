@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 public class MonsterManager : MonoBehaviour {
+
+    public static MonsterManager instance;
 	public Transform piggy;
 	public static int monstersAlive = 0;
 	public int maxMonstersAlive = 0;
@@ -13,11 +15,16 @@ public class MonsterManager : MonoBehaviour {
 
 
 	void Start () {
-		InvokeRepeating ("Spawn", spawnTime, spawnTime);
-       
+        instance = this;
+
 	}
 
-	private void Spawn()
+    public void StartMonsterSpawning()
+    {
+        InvokeRepeating("Spawn", spawnTime, spawnTime);
+    }
+
+	public void Spawn()
     {
 		if (monstersAlive < maxMonstersAlive)
         {
