@@ -21,7 +21,8 @@ public class MonsterMovement : MonoBehaviour
     public float startSpeed = 5.0f; //Monster speed
     public float slowDown; //Speed decrease
     public float patrolDist;
-   
+
+    float healthScaler;
 
     public bool isAttacking;
     float currentSpeed;
@@ -46,10 +47,25 @@ public class MonsterMovement : MonoBehaviour
         monsterMovementCurrent = this;
         currentHealth = maximumMonsterHealth;
         normalisedHealthAmount = 1;
+        healthScaler = maximumMonsterHealth;
     }
 
     void Update()
     {
+        switch (Collectable.collectCurrent.countPigglets)
+        {
+            case 1:
+                maximumMonsterHealth = healthScaler * 1.1f;
+                break;
+            case 2:
+                maximumMonsterHealth = healthScaler * 1.2f;
+                break;
+            case 3:
+                maximumMonsterHealth = healthScaler * 1.3f;
+                break;              
+        }
+
+
         if (followPiggy == true)
         {
            
