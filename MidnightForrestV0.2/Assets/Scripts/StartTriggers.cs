@@ -34,7 +34,7 @@ public class StartTriggers : MonoBehaviour {
                     break;
                 case TriggerNumber.Second:
                     SpawnPigglets.instance.Spawn();
-                    MonsterManager.instance.Spawn();
+                    MonsterManager.instance.StartMonsterSpawning();
                     Destroy(gameObject);
                     break;
             }

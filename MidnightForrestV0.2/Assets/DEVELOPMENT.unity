@@ -918,33 +918,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013862713822, guid: 31bc2ce6a124e074cb5206f1e1a1e384,
-        type: 2}
-      propertyPath: m_positionOffsetData.positionOffset.x
-      value: -1.0026742
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000013862713822, guid: 31bc2ce6a124e074cb5206f1e1a1e384,
-        type: 2}
-      propertyPath: m_positionOffsetData.positionOffset.z
-      value: 0.00000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 136000011578995030, guid: 31bc2ce6a124e074cb5206f1e1a1e384,
-        type: 2}
-      propertyPath: m_Radius
-      value: 3.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013173145566, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.5398799
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013173145566, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.5398798
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013173145566, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.5398798
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
   m_IsPrefabParent: 0
@@ -2641,27 +2614,27 @@ Prefab:
     - target: {fileID: 224000012221404660, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 189.53212
+      value: 198.55609
       objectReference: {fileID: 0}
     - target: {fileID: 224000010106453528, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 509.36758
+      value: 502.00974
       objectReference: {fileID: 0}
     - target: {fileID: 224000011032700834, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 383.01285
+      value: 370.8878
       objectReference: {fileID: 0}
     - target: {fileID: 224000011016499122, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 205.32648
+      value: 206.04877
       objectReference: {fileID: 0}
     - target: {fileID: 224000010655707878, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 691.00256
+      value: 689.3268
       objectReference: {fileID: 0}
     - target: {fileID: 111000011879581858, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
@@ -2866,8 +2839,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019270853}
-  m_LocalRotation: {x: -0.2988363, y: 0.6408564, z: 0.2988363, w: 0.6408564}
-  m_LocalPosition: {x: -15, y: -27.86, z: 0}
+  m_LocalRotation: {x: -0.30109113, y: 0.42998594, z: 0.15467672, w: 0.83697754}
+  m_LocalPosition: {x: 82.69004, y: -9.164137, z: -31.616364}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
