@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Team1\AudioEmergency\Team 1 - MGP-1\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Team1\AudioEmergency\Team 1 - MGP-1\.cache\iOS\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Team1\AudioEmergency\Team 1 - MGP-1\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\Team1\AudioFinalFinal\Team 1 - MGP-1\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Team1\AudioFinalFinal\Team 1 - MGP-1\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Team1\AudioFinalFinal\Team 1 - MGP-1\GeneratedSoundBanks\iOS\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Team1\AudioEmergency\Team 1 - MGP-1\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\Team1\AudioFinalFinal\Team 1 - MGP-1\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -26,11 +26,11 @@
 				<Event Id="2836636979" Name="Pig_Damaged" ObjectPath="\Events\Default Work Unit\Pig_Damaged"/>
 				<Event Id="2554214570" Name="Pig_Swim" ObjectPath="\Events\Default Work Unit\Pig_Swim"/>
 				<Event Id="1750874649" Name="Pig_Swim_Stop" ObjectPath="\Events\Default Work Unit\Pig_Swim_Stop" MaxAttenuation="0.000000"/>
-				<Event Id="3181627793" Name="Piglet_Pickup" ObjectPath="\Events\Default Work Unit\Piglet_Pickup" MaxAttenuation="50.000000"/>
-				<Event Id="2444492466" Name="Piglet_Scream" ObjectPath="\Events\Default Work Unit\Piglet_Scream" MaxAttenuation="50.000000"/>
-				<Event Id="2481768143" Name="Worm_Attack" ObjectPath="\Events\Default Work Unit\Worm_Attack" MaxAttenuation="50.000000"/>
-				<Event Id="2399068542" Name="Worm_Disappear" ObjectPath="\Events\Default Work Unit\Worm_Disappear" MaxAttenuation="50.000000"/>
-				<Event Id="1347007871" Name="Worm_Swim" ObjectPath="\Events\Default Work Unit\Worm_Swim" MaxAttenuation="50.000000"/>
+				<Event Id="3181627793" Name="Piglet_Pickup" ObjectPath="\Events\Default Work Unit\Piglet_Pickup" MaxAttenuation="150.000000"/>
+				<Event Id="2444492466" Name="Piglet_Scream" ObjectPath="\Events\Default Work Unit\Piglet_Scream" MaxAttenuation="150.000000"/>
+				<Event Id="2481768143" Name="Worm_Attack" ObjectPath="\Events\Default Work Unit\Worm_Attack" MaxAttenuation="150.000000"/>
+				<Event Id="2399068542" Name="Worm_Disappear" ObjectPath="\Events\Default Work Unit\Worm_Disappear" MaxAttenuation="150.000000"/>
+				<Event Id="1347007871" Name="Worm_Swim" ObjectPath="\Events\Default Work Unit\Worm_Swim" MaxAttenuation="150.000000"/>
 				<Event Id="3831645642" Name="Worm_Swim_Stop" ObjectPath="\Events\Default Work Unit\Worm_Swim_Stop" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

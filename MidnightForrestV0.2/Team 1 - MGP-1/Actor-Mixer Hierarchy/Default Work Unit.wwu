@@ -116,35 +116,6 @@
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Pig_Scream" ID="{AD21B97C-C232-464B-A5E7-BC0B6DE4860A}" ShortID="777373320">
 					<PropertyList>
-						<Property Name="Lowpass" Type="int16">
-							<RTPCList>
-								<RTPC Name="" ID="{94D33329-8655-4823-A054-C7B108A5FE4D}" ShortID="544179457">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Piglet_Scream_Distance" ID="{BE5B3AD4-3A4F-49A1-A7A8-90E73E0478F3}" WorkUnitID="{C32A3BDA-2A17-42F4-BE95-54817AB06E46}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{57252E79-3ABE-4D97-9C6C-D00B9B20DE32}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="65537"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>49</YPos>
-												<Flags>5</Flags>
-												<SegmentShape>Log3</SegmentShape>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>0</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
@@ -179,32 +150,6 @@
 							<ValueList>
 								<Value>-3</Value>
 							</ValueList>
-							<RTPCList>
-								<RTPC Name="" ID="{878527DE-CB25-4045-8940-5A631F17BADF}" ShortID="460200757">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Piglet_Scream_Distance" ID="{BE5B3AD4-3A4F-49A1-A7A8-90E73E0478F3}" WorkUnitID="{C32A3BDA-2A17-42F4-BE95-54817AB06E46}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{B07E2E78-1C31-4842-B83D-0E83727384DB}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-20</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-3</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>

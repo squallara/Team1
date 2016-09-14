@@ -44,10 +44,6 @@
 							<Value>75</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Piglet_Scream_Distance" ID="{BE5B3AD4-3A4F-49A1-A7A8-90E73E0478F3}"/>
-							<Value>0</Value>
-						</RTPCValue>
-						<RTPCValue>
 							<GameParameterRef Name="SS_Air_TimeOfDay" ID="{536FA72C-8C7E-4C8B-AE03-EF34FDADC314}"/>
 							<Value>6</Value>
 						</RTPCValue>
