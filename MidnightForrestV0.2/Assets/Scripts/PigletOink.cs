@@ -19,13 +19,13 @@ public class PigletOink : MonoBehaviour {
     private bool isHit = false;
     public float radius;
     float step;
-    float scaleSound = 0f;
-    float tempScaleSound = 0f;
     bool isMoving = true;
     float distanceFromStart;
     float previousDist;
     int distCounter;
     public Vector3 setStartScale;
+
+    float scaleFactor;
 
     //Variables for updating the position, and checking if it has moved
     Vector3 previousPos;
@@ -93,6 +93,7 @@ public class PigletOink : MonoBehaviour {
             scaleObject();
             amIMoving();
         }
+
         if (isShot == true) {
             destroyOink();
         }
@@ -100,6 +101,7 @@ public class PigletOink : MonoBehaviour {
 
     void shootOink() {
         Oink = (GameObject)Instantiate(OinkText);
+        Oink.GetComponent<OinkBubble>().parent = gameObject;
         rBody = Oink.GetComponent<Rigidbody>();
         Oink.transform.position = new Vector3(transform.position.x, height, transform.position.z);
         Oink.transform.rotation = Camera.main.transform.rotation;
@@ -123,7 +125,7 @@ public class PigletOink : MonoBehaviour {
     }
 
     void scaleObject() {
-        float scaleFactor;
+        
         if (Vector3.Distance(player.transform.position, transform.position) > distanceScale) {
             scaleFactor = minimumScale;
         } else {
