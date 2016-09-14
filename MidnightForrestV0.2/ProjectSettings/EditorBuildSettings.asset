@@ -6,7 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/WorkingOnEnemies.unity
+    path: Assets/DEVELOPMENT.unity
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/Scenes/you win.unity
   - enabled: 1
