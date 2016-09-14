@@ -4,6 +4,10 @@ using UnityEngine.SceneManagement;
 
 public class RestartButton : MonoBehaviour {
     
+    void Start()
+    {
+        AkSoundEngine.PostEvent("Pig_Damaged", gameObject);
+    }
 
     public void OnGUI()
     {
