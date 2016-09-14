@@ -56,13 +56,16 @@ public class MonsterMovement : MonoBehaviour
         {
             case 1:
                 maximumMonsterHealth = healthScaler * 1.1f;
+                currentSpeed = startSpeed * 1.1f;
                 break;
             case 2:
                 maximumMonsterHealth = healthScaler * 1.2f;
-                break;
+            currentSpeed = startSpeed * 1.2f;
+            break;
             case 3:
                 maximumMonsterHealth = healthScaler * 1.3f;
-                break;              
+            currentSpeed = startSpeed * 1.45f;
+            break;              
         }
 
 
