@@ -9,8 +9,6 @@ public class BecomeVisible : MonoBehaviour {
 
     void OnBecameVisible() {
         
-
-        Debug.Log("Found it");
         if (OnVisible != null)
         {
             OnVisible(transform);

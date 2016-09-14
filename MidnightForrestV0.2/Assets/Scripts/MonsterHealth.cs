@@ -23,7 +23,6 @@ public class MonsterHealth : MonoBehaviour {
 		if (isDead)
 			return;
         //currentHealth = Mathf.Clamp(currentHealth- (Time.deltaTime * (1000 / DrainHp)),0.0f,startingHealth);
-        Debug.Log(currentHealth);
         if (currentHealth <= 0)
             {
 			    Death (); //should die

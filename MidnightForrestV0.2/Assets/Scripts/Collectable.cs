@@ -26,7 +26,6 @@ public class Collectable : MonoBehaviour {
             //other.gameObject.SetActive(false);
             countPigglets++;
             monsterAmount.maxMonstersAlive += increasingMonster; 
-            Debug.Log("Collide");
 			GameObject placeOnPig = transform.FindChild ("GatheredPigglets" + countPigglets).gameObject;
 			other.gameObject.GetComponent<PiggletMovement> ().JumpOnPiggy(placeOnPig);
 			//piglet.SetActive(true);

@@ -922,7 +922,7 @@ Prefab:
         type: 2}
       propertyPath: OinkText
       value: 
-      objectReference: {fileID: 1000013307435040, guid: dd007f9bfbb3a6548bc5374f199e810d,
+      objectReference: {fileID: 1000013307435040, guid: 49807937b50f7d44abc1f15154f5dca4,
         type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
@@ -2374,9 +2374,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefeb:
-  - {fileID: 1000010270307310, guid: 31bc2ce6a124e074cb5206f1e1a1e384, type: 2}
-  - {fileID: 1000011335542786, guid: e6a91445fd1431e419f294599a1300bd, type: 2}
-  - {fileID: 1000010221545330, guid: 34697dbc5daa0ac4cacf48a70b81bd28, type: 2}
+  - {fileID: 1000013343117630, guid: 136a2a309214c2245bc92725a7451d7a, type: 2}
+  - {fileID: 1000013343117630, guid: 136a2a309214c2245bc92725a7451d7a, type: 2}
+  - {fileID: 1000013343117630, guid: 136a2a309214c2245bc92725a7451d7a, type: 2}
   - {fileID: 1000013343117630, guid: 136a2a309214c2245bc92725a7451d7a, type: 2}
   teleporting:
   - {fileID: 109428577}
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   piggy: {fileID: 1305534699}
-  maxMonstersAlive: 0
+  maxMonstersAlive: 5
   monsterType:
   - {fileID: 1000010496781912, guid: 0f90ac7b9bb438b4db892e33d5ca7724, type: 2}
   - {fileID: 1000010496781912, guid: 0f90ac7b9bb438b4db892e33d5ca7724, type: 2}
@@ -2620,27 +2620,27 @@ Prefab:
     - target: {fileID: 224000012221404660, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 200.23763
+      value: 250000
       objectReference: {fileID: 0}
     - target: {fileID: 224000010106453528, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 435.9604
+      value: 420000
       objectReference: {fileID: 0}
     - target: {fileID: 224000011032700834, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 494.25742
+      value: 470000
       objectReference: {fileID: 0}
     - target: {fileID: 224000011016499122, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 185.02971
+      value: 180000
       objectReference: {fileID: 0}
     - target: {fileID: 224000010655707878, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 750.25745
+      value: 710000
       objectReference: {fileID: 0}
     - target: {fileID: 111000011879581858, guid: 08dfea2db8b021340a28967ea67f7a49,
         type: 2}
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305534697}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d9df5b28ff794b4aae247f131a1c183, type: 3}
   m_Name: 
@@ -3819,7 +3819,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1305534697}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 85c713e80315a0e439ab98b0033071f5, type: 3}
   m_Name: 
@@ -4206,6 +4206,7 @@ GameObject:
   - 92: {fileID: 1688408988}
   - 114: {fileID: 1688408987}
   - 114: {fileID: 1688408986}
+  - 114: {fileID: 1688408992}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -4299,6 +4300,26 @@ Transform:
   - {fileID: 1140422071}
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!114 &1688408992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688408985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 730475ee64f9a894bbac0d9e6f22e813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 2
+  sensitivityDepth: 0.04
+  sensitivityNormals: 3.83
+  lumThreshold: 0.2
+  edgeExp: 0.4
+  sampleDist: 0.62
+  edgesOnly: 0
+  edgesOnlyBgColor: {r: 1, g: 1, b: 1, a: 1}
+  edgeDetectShader: {fileID: 4800000, guid: 0d1644bdf064147baa97f235fc5b4903, type: 3}
 --- !u!1 &1704969553
 GameObject:
   m_ObjectHideFlags: 0

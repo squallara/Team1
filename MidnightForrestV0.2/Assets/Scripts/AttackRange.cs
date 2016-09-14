@@ -33,7 +33,6 @@ public class AttackRange : MonoBehaviour {
 
     IEnumerator PreventMoving(float delay)
     {
-        print("hit piggy");
         movement.isAttacking = true;
         AkSoundEngine.PostEvent("Worm_Attack", gameObject);
         anim.SetBool("WormAttack", true);
