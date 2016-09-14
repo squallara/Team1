@@ -8,7 +8,7 @@ public class MonsterManager : MonoBehaviour {
 	public static int monstersAlive = 0;
 	public int maxMonstersAlive = 0;
 	public GameObject[] monsterType;
-	public float spawnTime = 15f;
+	public float spawnTime = 3f;
 	//public Transform[] spawnPoints;
     public List<Transform> spawnPoints;
     public int monsterKind = 0;

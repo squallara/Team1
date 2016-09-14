@@ -55,16 +55,16 @@ public class MonsterMovement : MonoBehaviour
         switch (Collectable.collectCurrent.countPigglets)
         {
             case 1:
-                maximumMonsterHealth = healthScaler * 1.05f;
-                currentSpeed = startSpeed * 1.05f;
+                maximumMonsterHealth = healthScaler * 1.1f;
+                currentSpeed = startSpeed * 1.1f;
                 break;
             case 2:
-                maximumMonsterHealth = healthScaler * 1.1f;
-            currentSpeed = startSpeed * 1.15f;
+                maximumMonsterHealth = healthScaler * 1.2f;
+            currentSpeed = startSpeed * 1.2f;
             break;
             case 3:
-                maximumMonsterHealth = healthScaler * 1.22f;
-            currentSpeed = startSpeed * 1.3f;
+                maximumMonsterHealth = healthScaler * 1.3f;
+            currentSpeed = startSpeed * 1.45f;
             break;              
         }
 
