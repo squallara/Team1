@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class MMScript : MonoBehaviour
+public class MMScriptDK : MonoBehaviour
 {
 
     public GameObject Menu;
@@ -21,7 +21,7 @@ public class MMScript : MonoBehaviour
     public void NewStart ()
     {
         AkSoundEngine.PostEvent("MenuButton", gameObject);
-        SceneManager.LoadScene("DEVELOPMENT");
+        SceneManager.LoadScene("DEVELOPMENT_DK");
     }
 
     public void OpenMenu()
@@ -64,6 +64,6 @@ public class MMScript : MonoBehaviour
 
     public void Language()
     {
-        SceneManager.LoadScene("MainMenu_DK");
+        SceneManager.LoadScene("MainMenu");
     }
 }

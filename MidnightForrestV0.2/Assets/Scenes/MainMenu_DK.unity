@@ -548,7 +548,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EN
+  m_Text: DK
 --- !u!222 &352426440
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -150, y: 150}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354610603
 MonoBehaviour:
@@ -656,10 +656,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Next
-
-
-'
+  m_Text: "N\xE6ste\n\n"
 --- !u!222 &354610606
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1070,7 +1067,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 150, y: 150}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &540599117
 MonoBehaviour:
@@ -1134,9 +1131,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Back
-
-'
+  m_Text: Tilbage
 --- !u!222 &540599120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1178,7 +1173,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -27}
-  m_SizeDelta: {x: 1300, y: 400}
+  m_SizeDelta: {x: 1400, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &562806201
 MonoBehaviour:
@@ -1226,7 +1221,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Instructions
+  m_Text: Instruktioner
 --- !u!222 &562806203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1540,7 +1535,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 2800000, guid: 0110661660d49184684b0e9972f9ea2b, type: 3}
+  m_Texture: {fileID: 2800000, guid: 456040c4bbf38f3429795a249bc494a1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1762,7 +1757,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit
+  m_Text: Luk
 --- !u!222 &1118354795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1822,8 +1817,8 @@ Camera:
   m_GameObject: {fileID: 1121315412}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.8313726, g: 0.69411767, b: 0.54901963, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2387,7 +2382,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599450648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 130a5ba50769da547ac539f22773d374, type: 3}
+  m_Script: {fileID: 11500000, guid: 78ee48ebba83cf5499762e403fb23084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 835423637}
@@ -2961,7 +2956,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Game
+  m_Text: Nyt Spil
 --- !u!222 &1903059859
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3005,7 +3000,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -150, y: 150}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2042174865
 MonoBehaviour:
@@ -3069,10 +3064,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Next
-
-
-'
+  m_Text: "N\xE6ste\n"
 --- !u!222 &2042174868
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3117,7 +3109,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 150, y: 150}
-  m_SizeDelta: {x: 300, y: 200}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2062823387
 MonoBehaviour:
@@ -3181,7 +3173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Back
+  m_Text: 'Tilbage
 
 '
 --- !u!222 &2062823390
