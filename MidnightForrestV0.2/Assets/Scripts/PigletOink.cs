@@ -19,13 +19,15 @@ public class PigletOink : MonoBehaviour {
     private bool isHit = false;
     public float radius;
     float step;
-    float scaleSound = 0f;
+    public float scaleSound = 0f;
     float tempScaleSound = 0f;
     bool isMoving = true;
     float distanceFromStart;
     float previousDist;
     int distCounter;
     public Vector3 setStartScale;
+
+    float scaleFactor;
 
     //Variables for updating the position, and checking if it has moved
     Vector3 previousPos;
@@ -92,7 +94,17 @@ public class PigletOink : MonoBehaviour {
             Oink.transform.rotation = Camera.main.transform.rotation;
             scaleObject();
             amIMoving();
+
+            if(scaleFactor <= 1f) {
+                tempScaleSound = 2f;
+            } else {
+                tempScaleSound = scaleFactor;
+            }
+
+            scaleSound = scale(2f, 3f, 0f, 100f, tempScaleSound);
+            //AkSoundEngine.SetRTPCValue("Piglet_Scream_Distance", scaleSound, Oink.gameObject);
         }
+
         if (isShot == true) {
             destroyOink();
         }
@@ -100,6 +112,7 @@ public class PigletOink : MonoBehaviour {
 
     void shootOink() {
         Oink = (GameObject)Instantiate(OinkText);
+        Oink.GetComponent<OinkBubble>().parent = this;
         rBody = Oink.GetComponent<Rigidbody>();
         Oink.transform.position = new Vector3(transform.position.x, height, transform.position.z);
         Oink.transform.rotation = Camera.main.transform.rotation;
@@ -123,7 +136,7 @@ public class PigletOink : MonoBehaviour {
     }
 
     void scaleObject() {
-        float scaleFactor;
+        
         if (Vector3.Distance(player.transform.position, transform.position) > distanceScale) {
             scaleFactor = minimumScale;
         } else {
@@ -151,4 +164,15 @@ public class PigletOink : MonoBehaviour {
             }
         }
     }
+
+
+    public float scale(float OldMin, float OldMax, float NewMin, float NewMax, float OldValue) {
+
+        float OldRange = (OldMax - OldMin);
+        float NewRange = (NewMax - NewMin);
+        float NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin;
+
+        return (NewValue);
+    }
+
 }

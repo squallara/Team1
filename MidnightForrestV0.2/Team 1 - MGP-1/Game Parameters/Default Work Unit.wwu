@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C32A3BDA-2A17-42F4-BE95-54817AB06E46}" SchemaVersion="72">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{C32A3BDA-2A17-42F4-BE95-54817AB06E46}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Piglet_Scream_Distance" ID="{BE5B3AD4-3A4F-49A1-A7A8-90E73E0478F3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -58,7 +58,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1113339503
       Guid: 2726aeb3d4f9d84491bb90a58d92d05e
-      maxAttenuation: 0
+      maxAttenuation: 50
     - Name: Piglet_Scream
       Path: Default Work Unit\Piglet_Scream
       PathAndIcons:
@@ -68,7 +68,7 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1850474830
       Guid: 5696eb70bbe65541a11f0ba89977bfad
-      maxAttenuation: 0
+      maxAttenuation: 50
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 

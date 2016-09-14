@@ -1941,7 +1941,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010270307310}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 30.05, y: 0, z: 6.05}
+  m_LocalPosition: {x: 55.02, y: 0, z: -23.7}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
@@ -2229,6 +2229,7 @@ MonoBehaviour:
   distanceScale: 150
   acceleration: 150
   radius: 17
+  scaleSound: 0
   setStartScale: {x: 1, y: 1, z: 1}
 --- !u!114 &114000013486608400
 MonoBehaviour:
