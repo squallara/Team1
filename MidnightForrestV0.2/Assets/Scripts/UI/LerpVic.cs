@@ -19,7 +19,14 @@ public class LerpVic : MonoBehaviour
 
     public void Restart()
     {
+        AkSoundEngine.PostEvent("MenuButton", gameObject);
         SceneManager.LoadScene("DEVELOPMENT");
+    }
+
+    public void MainM()
+    {
+        AkSoundEngine.PostEvent("MenuButton", gameObject);
+        SceneManager.LoadScene("MainMenu");
     }
 
 

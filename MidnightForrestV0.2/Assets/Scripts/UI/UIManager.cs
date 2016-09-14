@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour {
     {
         AkSoundEngine.PostEvent("MenuButton", gameObject);
         Debug.Log("We're Quitting");
-        Application.Quit();
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
